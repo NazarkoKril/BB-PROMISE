@@ -27,7 +27,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background-color: #efedf4;
+  background-color: #ebebed;
 }
 body,
 section {
@@ -365,7 +365,7 @@ header {
   position: relative;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 .hero::before {
   content: "";
