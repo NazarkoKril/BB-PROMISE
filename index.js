@@ -1,3 +1,44 @@
+// swiper 
+const swiper = new Swiper(".feedback__swiper", {
+
+    loop: true,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+
+    slidesPerView: 1,
+    spaceBetween: 30,
+    //   autoplay: {
+    //     delay: 1000,
+    //     disableOnInteraction: false,
+    //     stopOnLastSlide: false,
+
+    //   },
+    speed: 800,
+    //   breakpoints: {
+    //     // when window width is >= 320px
+    //     320: {
+    //       slidesPerView: 2,
+    //       spaceBetween: 20
+    //     },
+    //     // when window width is >= 480px
+    //     480: {
+    //       slidesPerView: 3,
+    //       spaceBetween: 30
+    //     },
+    //     // when window width is >= 640px
+    //     640: {
+    //       slidesPerView: 4,
+    //       spaceBetween: 40
+    //     }
+    //   }
+});
 //search
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -58,4 +99,37 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+});
+
+//animation 
+
+document.addEventListener('DOMContentLoaded', function () {
+    const contactSection = document.querySelector('.contact');
+    const contact2 = document.querySelector('.blue_round');
+    const contact3 = document.querySelector('.rose_round');
+
+    function getRandomPosition(element, container) {
+        const containerWidth = container.offsetWidth;
+        const containerHeight = container.offsetHeight;
+        const elementWidth = element.offsetWidth;
+        const elementHeight = element.offsetHeight;
+
+        const maxX = containerWidth - elementWidth;
+        const maxY = containerHeight - elementHeight;
+
+        const randomX = Math.floor(Math.random() * maxX);
+        const randomY = Math.floor(Math.random() * maxY);
+
+        return { x: randomX, y: randomY };
+    }
+
+    function moveElementRandomly(element, container) {
+        const newPosition = getRandomPosition(element, container);
+        element.style.transform = `translate(${newPosition.x}px, ${newPosition.y}px)`;
+    }
+
+    setInterval(() => {
+        moveElementRandomly(contact2, contactSection);
+        moveElementRandomly(contact3, contactSection);
+    }, 1000);
 });
