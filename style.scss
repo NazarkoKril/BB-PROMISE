@@ -33,6 +33,9 @@ body,
 section {
   overflow-x: hidden !important;
 }
+section {
+  overflow: hidden !important;
+}
 .second__btn {
   border-radius: 8px;
   border: 1px solid var(--Orange, #ed805b);
