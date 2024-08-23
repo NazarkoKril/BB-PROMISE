@@ -104,18 +104,15 @@ document.addEventListener('DOMContentLoaded', () => {
 //animation 
 
 document.addEventListener('DOMContentLoaded', function () {
-    const contactSection = document.querySelector('.contact');
-    const contact2 = document.querySelector('.blue_round');
-    const contact3 = document.querySelector('.rose_round');
+    const sections = document.querySelectorAll('.section');
 
     function getRandomPosition(element, container) {
-        const containerWidth = container.offsetWidth;
-        const containerHeight = container.offsetHeight;
+        const containerRect = container.getBoundingClientRect();
         const elementWidth = element.offsetWidth;
         const elementHeight = element.offsetHeight;
 
-        const maxX = containerWidth - elementWidth;
-        const maxY = containerHeight - elementHeight;
+        const maxX = containerRect.width - elementWidth;
+        const maxY = containerRect.height - elementHeight;
 
         const randomX = Math.floor(Math.random() * maxX);
         const randomY = Math.floor(Math.random() * maxY);
@@ -128,8 +125,16 @@ document.addEventListener('DOMContentLoaded', function () {
         element.style.transform = `translate(${newPosition.x}px, ${newPosition.y}px)`;
     }
 
-    setInterval(() => {
-        moveElementRandomly(contact2, contactSection);
-        moveElementRandomly(contact3, contactSection);
-    }, 1000);
+    sections.forEach(section => {
+        const contact2 = section.querySelector('.blue_round');
+        const contact3 = section.querySelector('.rose_round');
+
+        setInterval(() => {
+            moveElementRandomly(contact2, section);
+        }, 1000 + Math.random() * 1000);
+
+        setInterval(() => {
+            moveElementRandomly(contact3, section);
+        }, 1000 + Math.random() * 1000);
+    });
 });

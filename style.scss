@@ -23,6 +23,8 @@
     padding: 0 30px;
   }
 }
+body {
+}
 html {
   scroll-behavior: smooth;
 }
@@ -503,44 +505,30 @@ header {
   height: 557px;
 }
 .blue_round {
-  border-radius: 367px;
+  border-radius: 557px;
   background: radial-gradient(
     50% 50% at 50% 50%,
     rgba(171, 209, 222, 0.5) 0%,
     rgba(171, 209, 222, 0) 100%
   );
-  width: 367px;
-  height: 367px;
-  flex-shrink: 0;
+  width: 557px;
+  height: 557px;
 }
 .about1 {
   position: absolute;
-  top: -12%;
-  left: -4%;
+
   z-index: -1;
 }
 .about2 {
   position: absolute;
-  bottom: -1%;
-  right: -4%;
+
   z-index: -1;
 }
 // receive -----------------------------------------------------
 .receive {
   padding-bottom: 100px;
   position: relative;
-  .receive2 {
-    position: absolute;
-    left: -5%;
-    top: 10%;
-    z-index: -1;
-  }
-  .receive3 {
-    position: absolute;
-    bottom: -1%;
-    right: -4%;
-    z-index: -1;
-  }
+
   h2 {
     color: var(--Black, #1d1d1f);
     font-family: "PT Serif";
@@ -553,7 +541,14 @@ header {
     margin-bottom: 100px;
   }
 }
-
+.receive2 {
+  position: absolute;
+  z-index: -1;
+}
+.receive3 {
+  position: absolute;
+  z-index: -1;
+}
 .receive__list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -655,18 +650,7 @@ header {
   padding-top: 100px;
   padding-bottom: 100px;
   position: relative;
-  .cases2 {
-    position: absolute;
-    left: -5%;
-    top: 10%;
-    z-index: -1;
-  }
-  .cases3 {
-    position: absolute;
-    bottom: -1%;
-    right: -4%;
-    z-index: -1;
-  }
+
   h2 {
     color: var(--Black, #1d1d1f);
     font-family: "PT Serif";
@@ -676,7 +660,16 @@ header {
     line-height: normal;
   }
 }
+.cases2 {
+  position: absolute;
 
+  z-index: -1;
+}
+.cases3 {
+  position: absolute;
+
+  z-index: -1;
+}
 .cases__list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -686,7 +679,7 @@ header {
 .cases__iteam {
   width: 100%;
   img {
-    height: 420px;
+    max-height: 420px;
   }
   h3 {
     color: var(--Black, #1d1d1f);
@@ -913,14 +906,14 @@ header {
   overflow: hidden;
   .contact2 {
     position: absolute;
-    right: -2%;
-    top: -3%;
+    // right: -2%;
+    // top: -3%;
     z-index: -1;
   }
   .contact3 {
     position: absolute;
-    left: -7%;
-    bottom: -7%;
+    // left: -7%;
+    // bottom: -7%;
     z-index: -1;
   }
 }
@@ -951,6 +944,7 @@ form {
     line-height: normal;
     outline: none;
     transition: var(--trans);
+    width: 100%;
     &:focus {
       border-bottom: 1px solid #ed805b;
     }
@@ -1145,5 +1139,10 @@ footer {
 }
 .blue_round,
 .rose_round {
-  transition: transform 1s ease-in-out;
+  transition: transform 2s ease-in-out;
+}
+@media (max-width: 1195px) {
+  .cases__list {
+    grid-template-columns: 1fr 1fr;
+  }
 }

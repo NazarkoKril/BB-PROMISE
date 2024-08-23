@@ -522,42 +522,25 @@ header {
 }
 
 .blue_round {
-  border-radius: 367px;
+  border-radius: 557px;
   background: radial-gradient(50% 50% at 50% 50%, rgba(171, 209, 222, 0.5) 0%, rgba(171, 209, 222, 0) 100%);
-  width: 367px;
-  height: 367px;
-  flex-shrink: 0;
+  width: 557px;
+  height: 557px;
 }
 
 .about1 {
   position: absolute;
-  top: -12%;
-  left: -4%;
   z-index: -1;
 }
 
 .about2 {
   position: absolute;
-  bottom: -1%;
-  right: -4%;
   z-index: -1;
 }
 
 .receive {
   padding-bottom: 100px;
   position: relative;
-}
-.receive .receive2 {
-  position: absolute;
-  left: -5%;
-  top: 10%;
-  z-index: -1;
-}
-.receive .receive3 {
-  position: absolute;
-  bottom: -1%;
-  right: -4%;
-  z-index: -1;
 }
 .receive h2 {
   color: var(--Black, #1d1d1f);
@@ -569,6 +552,16 @@ header {
   width: 100%;
   max-width: 660px;
   margin-bottom: 100px;
+}
+
+.receive2 {
+  position: absolute;
+  z-index: -1;
+}
+
+.receive3 {
+  position: absolute;
+  z-index: -1;
 }
 
 .receive__list {
@@ -677,18 +670,6 @@ header {
   padding-bottom: 100px;
   position: relative;
 }
-.cases .cases2 {
-  position: absolute;
-  left: -5%;
-  top: 10%;
-  z-index: -1;
-}
-.cases .cases3 {
-  position: absolute;
-  bottom: -1%;
-  right: -4%;
-  z-index: -1;
-}
 .cases h2 {
   color: var(--Black, #1d1d1f);
   font-family: "PT Serif";
@@ -696,6 +677,16 @@ header {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+.cases2 {
+  position: absolute;
+  z-index: -1;
+}
+
+.cases3 {
+  position: absolute;
+  z-index: -1;
 }
 
 .cases__list {
@@ -709,7 +700,7 @@ header {
   width: 100%;
 }
 .cases__iteam img {
-  height: 420px;
+  max-height: 420px;
 }
 .cases__iteam h3 {
   color: var(--Black, #1d1d1f);
@@ -948,14 +939,10 @@ header {
 }
 .contact .contact2 {
   position: absolute;
-  right: -2%;
-  top: -3%;
   z-index: -1;
 }
 .contact .contact3 {
   position: absolute;
-  left: -7%;
-  bottom: -7%;
   z-index: -1;
 }
 
@@ -989,6 +976,7 @@ form input {
   line-height: normal;
   outline: none;
   transition: var(--trans);
+  width: 100%;
 }
 form input:focus {
   border-bottom: 1px solid #ed805b;
@@ -1190,5 +1178,11 @@ footer h4 {
 
 .blue_round,
 .rose_round {
-  transition: transform 1s ease-in-out;
+  transition: transform 2s ease-in-out;
+}
+
+@media (max-width: 1195px) {
+  .cases__list {
+    grid-template-columns: 1fr 1fr;
+  }
 }/*# sourceMappingURL=style.css.map */
