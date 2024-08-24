@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <title>BackBone Promise</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header__container">
+                <div class="h__left">
+                    <a href="./index.html"><img loading="lazy" src="./img/Logo.png" alt="logo photo"></a>
+                    <nav class="h__center">
+                        <ul class="header__list">
+                            <li class="header__item">
+                                <a href="./about-us.html" class="header__link">About Us</a>
+                            </li>
+                            <li class="header__item">
+                                <a href="./service.html" class="header__link">Services</a>
+                            </li>
+                            <li class="header__item">
+                                <a href="./cases.html" class="header__link">Cases</a>
+                            </li>
+                            <li class="header__item">
+                                <a href="./book.html" class="header__link">Look Book</a>
+                            </li>
+                            <li class="header__item">
+                                <a href="./blog.html" class="header__link">Blog</a>
+                            </li>
+                            <li class="header__item">
+                                <a href="./contact.html" class="header__link">Contacts</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div id="search-container" class="search-container">
+                    <input type="text" placeholder="Search..." class="search-input" />
+                </div>
+
+
+
+                <div class="h__right">
+                    <span id="search-icon" style="cursor: pointer;">
+                        <svg style="cursor: pointer;" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                            viewBox="0 0 18 18" fill="none">
+                            <g clip-path="url(#clip0_12_841)">
+                                <path
+                                    d="M17.8295 17.0207L13.1821 12.4477C14.3991 11.1255 15.1469 9.37682 15.1469 7.45261C15.1463 3.33639 11.7559 0 7.57327 0C3.39066 0 0.000244141 3.33639 0.000244141 7.45261C0.000244141 11.5688 3.39066 14.9052 7.57327 14.9052C9.38045 14.9052 11.0379 14.2801 12.3399 13.241L17.0052 17.832C17.2326 18.056 17.6016 18.056 17.8289 17.832C18.0568 17.6081 18.0568 17.2447 17.8295 17.0207ZM7.57327 13.7586C4.03433 13.7586 1.16546 10.9353 1.16546 7.45261C1.16546 3.96991 4.03433 1.14663 7.57327 1.14663C11.1122 1.14663 13.9811 3.96991 13.9811 7.45261C13.9811 10.9353 11.1122 13.7586 7.57327 13.7586Z"
+                                    fill="#1E1E1E" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_12_841">
+                                    <rect width="18" height="18" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </span>
+                    <div></div>
+                    <a class="second__btn" href="#">Get started</a>
+                </div>
+                <div class="burger">
+                    <div class="burger__icon">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
+                    </div>
+                    <div class="burger__menu">
+                        <div class="container">
+                            <ul class="header__list">
+                                <li class="header__item">
+                                    <a href="./index.html" class="header__link no_active">Home</a>
+                                </li>
+                                <li class="header__item">
+                                    <a href="./about-us.html" class="header__link">About Us</a>
+                                </li>
+                                <li class="header__item">
+                                    <a href="./service.html" class="header__link">Services</a>
+                                </li>
+                                <li class="header__item">
+                                    <a href="./cases.html" class="header__link">Cases</a>
+                                </li>
+                                <li class="header__item">
+                                    <a href="./book.html" class="header__link">Look Book</a>
+                                </li>
+                                <li class="header__item">
+                                    <a href="./blog.html" class="header__link">Blog</a>
+                                </li>
+
+                            </ul>
+                            <ul class="header__contact_list">
+                                <li class="header__contact_item">
+                                    <img src="./img/Mail.svg" alt="icon">
+                                    <a href="mailto:promise@backbonesociety.com">promise@backbonesociety.com</a>
+                                </li>
+                                <li class="header__contact_item">
+                                    <img src="./img/Phone.svg" alt="icon">
+                                    <a href="tel:(917) 323 3332">(917) 323 3332</a>
+                                </li>
+                                <li class="header__contact_item">
+                                    <img src="./img/Phone.svg" alt="icon">
+                                    <a href="">345 Name Street, City Name</a>
+                                </li>
+                            </ul>
+                            <ul class="header__soc_list">
+                                <li class="header__soc_item">
+                                    <img src="./img/Facebook.svg" alt="icon">
+                                </li>
+                                <li class="header__soc_item">
+                                    <img src="./img/Instagram.svg" alt="icon">
+                                </li>
+                                <li class="header__soc_item">
+                                    <img src="./img/Youtube.svg" alt="icon">
+                                </li>
+                                <li class="header__soc_item">
+                                    <img src="./img/Linkedin.svg" alt="icon">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="overlay" class="overlay_half"></div>
+
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="about__hero">
+            <img src="./img/serv.png" alt="">
+        </section>
+        <section class="serv section">
+            <div class="blue_round cases2"></div>
+            <div class="rose_round cases3"></div>
+            <div class="container">
+                <div class="des__contanier">
+                    <div class="des__l">
+                        <h2>Service</h2>
+                        <p>Your marketing budget! With us, you could potentially save thousands of dollars of your own
+                            marketing from utilizing our
+                            efforts in cross marketing on our platform.
+                            <br><br>
+                            We can get you into stores. We use geofencing to identify possible prospects, make initial
+                            contact, and use our process
+                            to book the appointment, and provide enough info for you and the store to make finalizing
+                            the sale easier for you as the
+                            rep.
+                        </p>
+                        <a class="first__btn" href="">Work with us</a>
+                    </div>
+                    <div class="des__r">
+                        <img src="./img/rev2.png" alt="photo">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="member section">
+            <div class="blue_round cases2"></div>
+            <div class="rose_round cases3"></div>
+            <div class="container">
+                <div class="member__box">
+                    <div class="member_l">
+                        <h3>A membership designed for you</h3>
+                        <h4>Comprehensive Services</h4>
+                        <p>
+                            Gain access to an exclusive dashboard designed to provide insights and control over our
+                            marketing strategies. Here's
+                            what you can expect:
+                            <br><br>
+                            <span>Geofencing Resources:</span> Utilize precise location-based targeting to connect with
+                            your audience
+                            exactly where they are.
+                            <br>
+                            <span>Blip Digital Billboards:</span> Engage viewers with dynamic digital displays in
+                            strategic
+                            locations, ensuring maximum impact
+                            and visibility.
+                            <br>
+                            <span>Social Media Marketing:</span> Optimize your online presence with tailored campaigns
+                            that enhance
+                            brand awareness and customer
+                            engagement.
+                            <br><br>
+                            The dashboard access will empower you to track performance metrics, manage campaigns, and
+                            explore additional services
+                            tailored to meet your specific goals. Partner with us and discover how our expertise can
+                            elevate your brand's presence
+                            and profitability.
+                        </p>
+                    </div>
+                    <div class="member_r">
+                        <img src="./img/member.png" alt="photo">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer__container">
+                <div class="footer__l">
+                    <a href="./index.html"><img class="footer__logo" loading="lazy" src="./img/Logo.png"
+                            alt="logo photo"></a>
+                    <a href="mailto:promise@backbonesociety.com"><img src="./img/Mail.svg" alt="icon">
+                        <p>promise@backbonesociety.com</p>
+                    </a>
+                    <a href="tel:+(917) 323 3332"><img src="./img/Phone.svg" alt="icon">
+                        <p>(917) 323 3332</p>
+                    </a>
+                    <a href="https://www.google.com/maps/search/googlemap/@38.4087134,62.8239077,4z?entry=ttu">
+                        <img src="./img/Map.svg" alt="icon">
+                        <p>345 Name Street, City Name</p>
+                    </a>
+                    <ul class="footer__soc">
+                        <li class="footer__item">
+                            <a href="http://facebook.com" target="_blank" rel="noopener noreferrer"><svg width="28"
+                                    height="29" viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="Facebook">
+                                        <path id="Vector"
+                                            d="M0.762954 3.99016C0 5.48754 0 7.44772 0 11.3681V16.9681C0 20.8885 0 22.8486 0.762954 24.346C1.43407 25.6632 2.50493 26.734 3.82207 27.4051C5.31945 28.1681 7.27963 28.1681 11.2 28.1681H13.8801V17.5539H9.90955V13.0836H13.8801V9.67648C13.8801 5.80058 16.2148 3.65965 19.7868 3.65965C21.4977 3.65965 23.2873 3.9617 23.2873 3.9617V7.76753H21.3154C19.3728 7.76753 18.767 8.9596 18.767 10.1826V13.0836H23.1041L22.4107 17.5539H18.767V28.1634C21.4232 28.1425 22.9549 28.0283 24.1779 27.4051C25.4951 26.734 26.5659 25.6632 27.237 24.346C28 22.8486 28 20.8885 28 16.9681V11.3681C28 7.44772 28 5.48754 27.237 3.99016C26.5659 2.67302 25.4951 1.60216 24.1779 0.931045C22.6806 0.168091 20.7204 0.168091 16.8 0.168091H11.2C7.27963 0.168091 5.31945 0.168091 3.82207 0.931045C2.50493 1.60216 1.43407 2.67302 0.762954 3.99016Z"
+                                            fill="#ED805B" />
+                                    </g>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="http://instagram.com" target="_blank" rel="noopener noreferrer"><svg width="28"
+                                    height="29" viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="Instagram" clip-path="url(#clip0_181_1283)">
+                                        <g id="Vector">
+                                            <path
+                                                d="M17.3944 14.1681C17.3944 12.2936 15.8748 10.7741 14.0005 10.7741C12.1261 10.7741 10.6067 12.2936 10.6067 14.1681C10.6067 16.0424 12.1261 17.562 14.0005 17.562C15.8748 17.562 17.3944 16.0424 17.3944 14.1681Z"
+                                                fill="#ED805B" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M13.6612 5.82102C13.4553 5.82093 13.2645 5.82084 13.0871 5.82112V5.81858C11.1896 5.8207 10.8256 5.83342 9.88634 5.87585C8.89364 5.92145 8.35465 6.08691 7.99576 6.22691C7.52062 6.41188 7.18124 6.63248 6.82488 6.98885C6.46853 7.34521 6.24751 7.6846 6.06297 8.15976C5.92361 8.51867 5.75773 9.05745 5.71234 10.0502C5.66355 11.1235 5.6538 11.4442 5.6538 14.1632C5.6538 16.8822 5.66355 17.2046 5.71234 18.2779C5.75752 19.2707 5.92361 19.8095 6.06297 20.1679C6.24793 20.6433 6.46853 20.9818 6.82488 21.3382C7.18124 21.6946 7.52062 21.9152 7.99576 22.0997C8.35487 22.2391 8.89364 22.405 9.88634 22.4508C10.9596 22.4996 11.2818 22.5102 14.0005 22.5102C16.719 22.5102 17.0414 22.4996 18.1147 22.4508C19.1074 22.4054 19.6466 22.2399 20.0051 22.0999C20.4804 21.9154 20.8187 21.6948 21.1751 21.3384C21.5314 20.9823 21.7525 20.6439 21.937 20.1688C22.0764 19.8103 22.2422 19.2715 22.2876 18.2788C22.3364 17.2055 22.347 16.883 22.347 14.1658C22.347 11.4485 22.3364 11.1261 22.2876 10.0527C22.2424 9.06 22.0764 8.52121 21.937 8.16273C21.752 7.68757 21.5314 7.34818 21.1751 6.99182C20.8189 6.63545 20.4802 6.41485 20.0051 6.2303C19.6462 6.09094 19.1074 5.92506 18.1147 5.87967C17.0412 5.83088 16.719 5.82112 14.0005 5.82112C13.883 5.82112 13.77 5.82107 13.6612 5.82102ZM18.2135 8.73312C18.2135 8.05836 18.7608 7.51173 19.4353 7.51173C20.1098 7.51173 20.6571 8.05857 20.6571 8.73312C20.6571 9.40767 20.1098 9.95494 19.4353 9.95494C18.7608 9.95494 18.2135 9.40767 18.2135 8.73312ZM8.77188 14.1681C8.77188 11.2805 11.113 8.9393 14.0005 8.9393C16.888 8.9393 19.2283 11.2805 19.2283 14.1681C19.2283 17.0557 16.888 19.3958 14.0005 19.3958C11.113 19.3958 8.77188 17.0557 8.77188 14.1681Z"
+                                                fill="#ED805B" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M0.762954 3.99027C0 5.4877 0 7.44794 0 11.3684V16.9686C0 20.8891 0 22.8493 0.762954 24.3468C1.43407 25.6639 2.50493 26.7348 3.82207 27.406C5.31945 28.1689 7.27963 28.1689 11.2 28.1689H16.8C20.7204 28.1689 22.6806 28.1689 24.1779 27.406C25.4951 26.7348 26.5659 25.6639 27.237 24.3468C28 22.8493 28 20.8891 28 16.9686V11.3684C28 7.44794 28 5.4877 27.237 3.99027C26.5659 2.6731 25.4951 1.6022 24.1779 0.931068C22.6806 0.168091 20.7204 0.168091 16.8 0.168091H11.2C7.27963 0.168091 5.31945 0.168091 3.82207 0.931068C2.50493 1.6022 1.43407 2.6731 0.762954 3.99027ZM9.80234 4.04779C10.8884 3.99836 11.2354 3.98627 14.0005 3.98627H13.9973C16.7633 3.98627 17.1091 3.99836 18.1951 4.04779C19.279 4.09742 20.0193 4.26903 20.6683 4.52082C21.3386 4.78067 21.905 5.12854 22.4713 5.69491C23.0377 6.26085 23.3855 6.82891 23.6464 7.49857C23.8967 8.14597 24.0685 8.88585 24.1194 9.96979C24.1682 11.0558 24.181 11.4029 24.181 14.1681C24.181 16.9333 24.1682 17.2795 24.1194 18.3655C24.0685 19.4491 23.8967 20.1891 23.6464 20.8368C23.3855 21.5062 23.0377 22.0743 22.4713 22.6402C21.9056 23.2066 21.3384 23.5553 20.669 23.8154C20.0212 24.0672 19.2805 24.2388 18.1966 24.2884C17.1105 24.3378 16.7646 24.3499 13.9992 24.3499C11.2343 24.3499 10.8875 24.3378 9.80149 24.2884C8.7178 24.2388 7.97773 24.0672 7.32993 23.8154C6.66071 23.5553 6.09266 23.2066 5.52695 22.6402C4.96082 22.0743 4.61295 21.5062 4.35268 20.8365C4.10112 20.1891 3.92952 19.4493 3.87967 18.3653C3.83046 17.2793 3.81816 16.9333 3.81816 14.1681C3.81816 11.4029 3.83088 11.0556 3.87946 9.96957C3.92824 8.88606 4.10006 8.14597 4.35247 7.49836C4.61337 6.82891 4.96124 6.26085 5.52759 5.69491C6.09351 5.12876 6.66155 4.78088 7.3312 4.52082C7.97858 4.26903 8.71843 4.09742 9.80234 4.04779Z"
+                                                fill="#ED805B" />
+                                        </g>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_181_1283">
+                                            <rect width="28" height="28" fill="white"
+                                                transform="translate(0 0.168091)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="http://youtube.com" target="_blank" rel="noopener noreferrer"><svg width="28"
+                                    height="29" viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="Youtube" clip-path="url(#clip0_181_1284)">
+                                        <g id="Vector">
+                                            <path d="M11.8524 11.4433L17.341 14.5658L11.8524 17.6884V11.4433Z"
+                                                fill="#ED805B" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M0.762954 3.99016C0 5.48754 0 7.44772 0 11.3681V16.9681C0 20.8885 0 22.8486 0.762954 24.346C1.43407 25.6632 2.50493 26.734 3.82207 27.4051C5.31945 28.1681 7.27963 28.1681 11.2 28.1681H16.8C20.7204 28.1681 22.6806 28.1681 24.1779 27.4051C25.4951 26.734 26.5659 25.6632 27.237 24.346C28 22.8486 28 20.8885 28 16.9681V11.3681C28 7.44772 28 5.48754 27.237 3.99016C26.5659 2.67302 25.4951 1.60216 24.1779 0.931045C22.6806 0.168091 20.7204 0.168091 16.8 0.168091H11.2C7.27963 0.168091 5.31945 0.168091 3.82207 0.931045C2.50493 1.60216 1.43407 2.67302 0.762954 3.99016ZM24.0609 9.47809C23.9422 9.03133 23.7082 8.62358 23.3824 8.29566C23.0565 7.96774 22.6503 7.73115 22.2043 7.60957C20.5625 7.16809 14 7.16809 14 7.16809C14 7.16809 7.4375 7.16809 5.79568 7.60957C5.34969 7.73115 4.94345 7.96774 4.61763 8.29566C4.2918 8.62358 4.05782 9.03133 3.93909 9.47809C3.5 11.1271 3.5 14.5658 3.5 14.5658C3.5 14.5658 3.5 18.0046 3.93909 19.6535C4.05782 20.1003 4.2918 20.5081 4.61763 20.836C4.94345 21.1639 5.34969 21.4005 5.79568 21.5221C7.4375 21.9635 14 21.9635 14 21.9635C14 21.9635 20.5625 21.9635 22.2043 21.5221C22.6503 21.4005 23.0565 21.1639 23.3824 20.836C23.7082 20.5081 23.9422 20.1003 24.0609 19.6535C24.5 18.0046 24.5 14.5658 24.5 14.5658C24.5 14.5658 24.5 11.1271 24.0609 9.47809Z"
+                                                fill="#ED805B" />
+                                        </g>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_181_1284">
+                                            <rect width="28" height="28" fill="white"
+                                                transform="translate(0 0.168091)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="http://linkedin.com" target="_blank" rel="noopener noreferrer"><svg width="28"
+                                    height="29" viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="Linkedin" clip-path="url(#clip0_181_1285)">
+                                        <path id="Vector" fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M0.762954 3.99016C0 5.48754 0 7.44772 0 11.3681V16.9681C0 20.8885 0 22.8486 0.762954 24.346C1.43407 25.6632 2.50493 26.734 3.82207 27.4051C5.31945 28.1681 7.27963 28.1681 11.2 28.1681H16.8C20.7204 28.1681 22.6806 28.1681 24.1779 27.4051C25.4951 26.734 26.5659 25.6632 27.237 24.346C28 22.8486 28 20.8885 28 16.9681V11.3681C28 7.44772 28 5.48754 27.237 3.99016C26.5659 2.67302 25.4951 1.60216 24.1779 0.931045C22.6806 0.168091 20.7204 0.168091 16.8 0.168091H11.2C7.27963 0.168091 5.31945 0.168091 3.82207 0.931045C2.50493 1.60216 1.43407 2.67302 0.762954 3.99016ZM4.975 23.5014H8.845V11.0386H4.975V23.5014ZM4.66667 7.07606C4.66667 8.31359 5.67042 9.33861 6.90792 9.33861C8.145 9.33861 9.14917 8.31359 9.14917 7.07606C9.14917 6.48163 8.91304 5.91154 8.49272 5.49122C8.0724 5.07089 7.50233 4.83476 6.90792 4.83476C6.3135 4.83476 5.74343 5.07089 5.32311 5.49122C4.9028 5.91154 4.66667 6.48163 4.66667 7.07606ZM19.4675 23.5014H23.3333V16.6554C23.3333 13.3054 22.6133 10.7261 18.6967 10.7261C16.8137 10.7261 15.5517 11.7595 15.035 12.7387H14.9808V11.0386H11.2692V23.5014H15.135V17.3305C15.135 15.7054 15.4433 14.1345 17.4554 14.1345C19.4383 14.1345 19.4675 15.9888 19.4675 17.4346V23.5014Z"
+                                            fill="#ED805B" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_181_1285">
+                                            <rect width="28" height="28" fill="white"
+                                                transform="translate(0 0.168091)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__r">
+                    <ul class="footer__list">
+                        <li class="header__item">
+                            <a href="./about-us.html" class="header__link">About Us</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="./service.html" class="header__link">Services</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="./cases.html" class="header__link">Cases</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="./book.html" class="header__link">Look Book</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="./blog.html" class="header__link">Blog</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="./contact.html" class="header__link">Contacts</a>
+                        </li>
+                    </ul>
+                    <div class="footer__btn">
+
+                        <div class="footer__info">
+                            <img src="./img/arrow__footer_b.png" class="footer_b" alt="icon">
+                            <p><span>Struggling to be seen in a crowded marketplace?</span> We offer a unique solution
+                                to boost your store's visibility and attract new customers.</p>
+                            <a href="" class="first__btn">Work with us</a>
+                            <img src="./img/arrow__footer_s.png" class="footer_s" alt="icon">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <h4>Copyright © 2024, Back Bone Promise. All rights reserved. See our terms of use and privacy notice.</h4>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./index.js"></script>
+
+</body>
+
+</html>
