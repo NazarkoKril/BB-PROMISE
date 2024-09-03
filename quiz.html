@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <title>BackBone Promise</title>
+
+</head>
+
+<body>
+
+    <main class="main_quiz">
+        <div class="quiz_form">
+            <a class="home" href="./contact-form.html">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M18 44V24H30V44M6 18L24 4L42 18V40C42 41.0609 41.5786 42.0783 40.8284 42.8284C40.0783 43.5786 39.0609 44 38 44H10C8.93913 44 7.92172 43.5786 7.17157 42.8284C6.42143 42.0783 6 41.0609 6 40V18Z"
+                        stroke="#1D1D1F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </a>
+            <form action="">
+                <div class="swiper swiper__form">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="slide__form">
+                                <p>Are you working with lines that are lacking marketing exposure on both Google & Meta?
+                                </p>
+                                <button class="quiz__btn1">Yes</button>
+                                <button class="quiz__btn1">No</button>
+                            </div>
+
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide__form">
+                                <p>Are you working with lines that are lacking marketing exposure on both Google & Meta?
+                                </p>
+                                <button class="quiz__btn1">Yes</button>
+                                <button class="quiz__btn1">No</button>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+
+                        </div>
+                        <div class="swiper-slide">
+
+                        </div>
+                    </div>
+                    <div class="swiper-button-next">Next ></div>
+                    <div class="swiper-button-prev">
+                        < Return</div>
+                            <div class="swiper-pagination"></div>
+                    </div>
+            </form>
+        </div>
+
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./index.js"></script>
+    <script>
+        var swiper = new Swiper(".swiper__form", {
+            spaceBetween: 30,
+            effect: "fade",
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                type: "fraction",
+            },
+        });
+    </script>
+</body>
+
+</html>
