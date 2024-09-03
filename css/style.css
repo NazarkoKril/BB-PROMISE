@@ -60,6 +60,7 @@ section {
   line-height: normal;
   cursor: pointer;
   transition: var(--trans);
+  width: fit-content;
 }
 .second__btn:hover {
   background: rgba(243, 128, 91, 0.6);
@@ -794,6 +795,82 @@ header {
 .des__r {
   border-radius: 8px;
   overflow: hidden;
+}
+
+.des1 {
+  background: var(--Main-Beige, #ffe5d7);
+  padding-left: 160px;
+  padding-bottom: 0px;
+}
+.des1 .des__contanier {
+  gap: 100px;
+}
+.des1 .des__l {
+  max-width: 515px;
+}
+.des1 .des__l h2 {
+  color: #000;
+  font-family: "PT Serif";
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 74px; /* 115.625% */
+  text-transform: uppercase;
+}
+.des1 .des__l p {
+  color: #000;
+  text-align: justify;
+  /* Text Tablet/Body */
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-top: 20px;
+}
+.des1 .des__r {
+  width: 100%;
+  border-radius: 0;
+  overflow: hidden;
+  height: 100%;
+}
+
+.des1 .des__l {
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
+}
+.des1 .des__l h3 {
+  color: #000;
+  /* Text Tablet/Paragraph */
+  font-family: "Open Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 100px;
+  text-align: left;
+}
+
+.des2 {
+  padding-top: 80px;
+  padding-bottom: 0px;
+}
+.des2 .des__l {
+  max-width: 540px;
+}
+.des2 .des__l h3 {
+  color: #000;
+  /* Text Tablet/Paragraph */
+  font-family: "Open Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 60px;
+}
+.des2 .des__l p {
+  margin-top: 20px;
 }
 
 .feedback {
@@ -1866,4 +1943,284 @@ footer h4 {
   line-height: normal;
   width: 80%;
   padding-top: 20px;
+}
+
+.book__hero {
+  background-image: url(../img/hero__book.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 300px;
+  padding-bottom: 420px;
+  position: relative;
+  z-index: 1;
+}
+.book__hero h2 {
+  color: #000;
+  font-family: "PT Serif";
+  font-size: 112px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120px; /* 107.143% */
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.case__hero {
+  background-image: url(../img/cases.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 300px;
+  padding-bottom: 420px;
+  position: relative;
+  z-index: 1;
+}
+.case__hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(212, 228, 235, 0.85);
+  z-index: -1;
+}
+.case__hero h2 {
+  color: #000;
+  font-family: "PT Serif";
+  font-size: 112px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120px; /* 107.143% */
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.case1::after {
+  background: rgba(255, 229, 215, 0.85);
+}
+
+.case1 {
+  padding-top: 45px;
+  padding-bottom: 190px;
+}
+
+.hero__link {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.hero__link a {
+  color: #000;
+  /* Text Tablet/Body */
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  transition: var(--trans);
+}
+.hero__link a:hover {
+  color: #dd643b;
+}
+.hero__link .active__link {
+  font-weight: 400;
+}
+.hero__link p {
+  color: #000;
+  /* Text Tablet/Body */
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.case__box {
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+}
+
+.case_l {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 790px;
+}
+.case_l h2 {
+  color: #000;
+  text-align: left;
+  /* Heading Tablet/H1 */
+  font-family: "PT Serif";
+  font-size: 112px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120px; /* 107.143% */
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  margin-top: 75px;
+}
+.case_l p {
+  color: #000;
+  text-align: justify;
+  /* Text Tablet/Body */
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.case_r {
+  width: 100%;
+  max-width: 670px;
+}
+
+.des3 {
+  position: relative;
+  padding-top: 100px;
+}
+.des3 .des__r {
+  max-width: 650px;
+}
+.des3 .des__l {
+  max-width: 800px;
+  position: relative;
+  min-height: 728px;
+}
+.des3 .des__l p {
+  margin: 30px 0;
+}
+
+.btn__link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 0;
+  gap: 20px;
+  width: 100%;
+}
+.btn__link a {
+  color: var(--Black, #1d1d1f);
+  font-family: "Open Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-bottom: 2px;
+  border-bottom: 1px solid #1d1d1f;
+  transition: var(--trans);
+}
+.btn__link a:hover {
+  color: #dd643b;
+  border-bottom-color: #dd643b;
+}
+
+.book1 .des__r {
+  display: flex;
+  gap: 20px;
+}
+
+.blog {
+  padding-top: 115px;
+  padding-bottom: 50px;
+}
+.blog h2 {
+  color: #000;
+  /* Heading Tablet/H1 */
+  font-family: "PT Serif";
+  font-size: 112px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120px; /* 107.143% */
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.blog__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 100px;
+  row-gap: 50px;
+}
+.blog__list h3 {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.blog__info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+.blog__info p {
+  margin-bottom: 0px;
+  color: var(--Black, #1d1d1f);
+  /* Text Tablet/Body */
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.blog__info .time {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.blog__card {
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+.blog__card .hero__link {
+  margin-bottom: 45px;
+}
+.blog__card h2 {
+  color: #000;
+  /* Heading Tablet/H2 */
+  font-family: "PT Serif";
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 74px; /* 115.625% */
+  text-transform: uppercase;
+  margin-top: 12px;
+  margin-bottom: 50px;
+}
+.blog__card .second__btn {
+  margin-top: 50px;
+}
+.blog__card .case_r {
+  max-width: 100%;
+}
+
+.case_l {
+  max-width: 700px;
+}
+.case_l p {
+  color: #000;
+  text-align: justify;
+  /* Text Tablet/Body */
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.info__blog {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+.time {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }/*# sourceMappingURL=style.css.map */
