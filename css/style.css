@@ -3,7 +3,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
   text-decoration: none;
   list-style: none;
 }
@@ -26,7 +26,7 @@
     padding: 0 15px;
   }
 }
-@media (max-width: 1650px) {
+@media (max-width: 1750px) {
   body {
     zoom: 0.7;
   }
@@ -88,8 +88,8 @@ section {
   gap: 10px;
   border-radius: 8px;
   border: none;
-  background: var(--Orange, #ed805b);
-  color: var(--Main-Beige, #ffe5d7);
+  background-color: var(--Orange, #ed805b);
+  color: var(--Main-Beige, #ffe5d7) !important;
   font-family: "Open Sans";
   font-size: 18px;
   font-style: normal;
@@ -194,7 +194,7 @@ header {
 
 .btn {
   color: #efedf4;
-  font-family: Montserrat;
+  font-family: Open Sans;
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
@@ -2860,7 +2860,6 @@ footer h4 {
   text-align: justify;
   text-overflow: ellipsis;
   padding-top: 100px;
-  /* Text Tablet/Body */
   font-family: "Open Sans";
   font-size: 18px;
   font-style: normal;
@@ -2873,7 +2872,75 @@ footer h4 {
   border-radius: 8px;
 }
 
+.grid2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+}
+
+.col100 {
+  width: 100%;
+}
+
+.header-block header {
+  background-color: transparent;
+}
+
+.header-block header h2 {
+  top: 40px;
+  background-color: #ebebed;
+}
+
+.header-primary {
+  background-color: transparent;
+}
+
+.user {
+  height: 30px;
+  width: 30px;
+}
+.user svg {
+  height: 30px !important;
+  width: 30px !important;
+}
+
+.basket {
+  height: 35px;
+  width: 35px;
+  position: relative;
+}
+.basket svg {
+  height: 35px !important;
+  width: 35px !important;
+}
+
+.basket-count {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #dd643b;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: -5px;
+  right: -5px;
+}
+
+@media (max-width: 1230px) {
+  .header__list {
+    gap: 40px;
+  }
+}
 @media (max-width: 1150px) {
+  .user,
+  .basket {
+    display: block !important;
+  }
+  .grid2 {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
   .result_section {
     padding-block: 40px;
   }
@@ -3095,6 +3162,9 @@ footer h4 {
   }
 }
 @media (max-width: 850px) {
+  .h__right {
+    gap: 15px;
+  }
   .thanks_form img {
     width: 32px;
     height: 32px;
