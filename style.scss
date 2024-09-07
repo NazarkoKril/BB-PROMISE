@@ -2705,6 +2705,10 @@ footer {
   }
 }
 @media (max-width: 1150px) {
+  .contact__form {
+    margin-right: 15px;
+    margin-left: 15px;
+  }
   .main_l {
     position: absolute;
     top: 50%;
@@ -2892,6 +2896,28 @@ footer {
 }
 
 @media (max-width: 850px) {
+  .contact__form {
+    min-height: auto;
+  }
+  .contact__form form p {
+    font-size: 14px;
+  }
+  .contact__form form h2 {
+    color: #000;
+    text-align: center;
+
+    /* Heading_Phone/H2_Phone */
+    font-family: "PT Serif";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 33.6px */
+    text-transform: uppercase;
+  }
+  .contact__form {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
   .main_l {
     width: 100%;
   }
