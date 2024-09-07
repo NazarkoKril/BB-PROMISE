@@ -204,7 +204,28 @@
         </div>
     </header>
     <main>
-        <section class="hero">
+        <section class="hero ">
+            <div class="video_cont">
+                <video class="video-desktop" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop"
+                    preload="metadata"
+                    poster="//backbonepromise.com/cdn/shop/files/preview_images/5e99e9655dca47128017336a3fcd4c64.thumbnail.0000000000_1920x.jpg?v=1717634176">
+                    <source
+                        src="//backbonepromise.com/cdn/shop/videos/c/vp/5e99e9655dca47128017336a3fcd4c64/5e99e9655dca47128017336a3fcd4c64.HD-1080p-7.2Mbps-30087178.mp4?v=0"
+                        type="video/mp4">
+                    <img
+                        src="//backbonepromise.com/cdn/shop/files/preview_images/5e99e9655dca47128017336a3fcd4c64.thumbnail.0000000000_1920x.jpg?v=1717634176">
+                </video>
+                <video class="video-mobile" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop"
+                    preload="metadata"
+                    poster="//backbonepromise.com/cdn/shop/files/preview_images/3f5da4bf68104da1acc1a36eb2a198ca.thumbnail.0000000000_767x.jpg?v=1717436581">
+                    <source
+                        src="//backbonepromise.com/cdn/shop/videos/c/vp/3f5da4bf68104da1acc1a36eb2a198ca/3f5da4bf68104da1acc1a36eb2a198ca.HD-1080p-7.2Mbps-29978430.mp4?v=0"
+                        type="video/mp4">
+                    <img
+                        src="//backbonepromise.com/cdn/shop/files/preview_images/3f5da4bf68104da1acc1a36eb2a198ca.thumbnail.0000000000_767x.jpg?v=1717436581">
+                </video>
+            </div>
+
             <div class="container">
                 <div class="hero__container">
                     <h2>THE BEST SOLUTION</h2>
@@ -294,8 +315,25 @@
                         </p>
                     </li>
                 </ul>
-                <div class="video">
-                    <img src="./img/receive.png" alt="photo">
+
+
+                <div class="video video_play">
+                    <video class="myVideo" playsinline="playsinline" loop="loop" preload="metadata"
+                        poster="//backbonepromise.com/cdn/shop/files/preview_images/5e99e9655dca47128017336a3fcd4c64.thumbnail.0000000000_1920x.jpg?v=1717634176">
+                        <source
+                            src="//backbonepromise.com/cdn/shop/videos/c/vp/5e99e9655dca47128017336a3fcd4c64/5e99e9655dca47128017336a3fcd4c64.HD-1080p-7.2Mbps-30087178.mp4?v=0"
+                            type="video/mp4"><img
+                            src="//backbonepromise.com/cdn/shop/files/preview_images/5e99e9655dca47128017336a3fcd4c64.thumbnail.0000000000_1920x.jpg?v=1717634176">
+                    </video>
+                    <div class="play-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="102" height="102" viewBox="0 0 102 102"
+                            fill="none">
+                            <circle cx="51" cy="51" r="51" fill="white" fill-opacity="0.5" />
+                            <path
+                                d="M72 47.5359C74.6667 49.0755 74.6667 52.9245 72 54.4641L42 71.7846C39.3333 73.3242 36 71.3997 36 68.3205L36 33.6795C36 30.6003 39.3333 28.6758 42 30.2154L72 47.5359Z"
+                                fill="#EBEBED" />
+                        </svg>
+                    </div>
                 </div>
             </div>
         </section>
@@ -328,36 +366,55 @@
 
             <div class="container">
                 <h2>OUR CASES</h2>
-                <ul class="cases__list">
-                    <li class="cases__iteam">
-                        <img src="./img/case1.png" alt="photo" loading="lazy">
-                        <h3>Header</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at dolor sit amet quam
-                            faucibus...</p>
-                        <a href="./cases.html">See more</a>
-                    </li>
-                    <li class="cases__iteam">
-                        <img src="./img/case2.png" alt="photo" loading="lazy">
-                        <h3>Header</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at dolor sit amet quam
-                            faucibus...</p>
-                        <a href="./cases.html">See more</a>
-                    </li>
-                    <li class="cases__iteam">
-                        <img src="./img/case3.png" alt="photo" loading="lazy">
-                        <h3>Header</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at dolor sit amet quam
-                            faucibus...</p>
-                        <a href="./cases.html">See more</a>
-                    </li>
-                    <li class="cases__iteam">
-                        <img src="./img/case4.png" alt="photo" loading="lazy">
-                        <h3>Header</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at dolor sit amet quam
-                            faucibus...</p>
-                        <a href="./cases.html">See more</a>
-                    </li>
-                </ul>
+                <div class="swiper case__swiper">
+
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                            <a href="./case-card.html" class="cases__iteam">
+                                <img src="./img/case1.png" alt="photo" loading="lazy">
+                                <h3>Header</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at dolor sit amet
+                                    quam
+                                    faucibus...</p>
+                                <h5>See more</h5>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="./case-card.html" class="cases__iteam">
+                                <img src="./img/case2.png" alt="photo" loading="lazy">
+                                <h3>Header</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at dolor sit amet
+                                    quam
+                                    faucibus...</p>
+                                <h5>See more</h5>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="./case-card.html" class="cases__iteam">
+                                <img src="./img/case3.png" alt="photo" loading="lazy">
+                                <h3>Header</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at dolor sit amet
+                                    quam
+                                    faucibus...</p>
+                                <h5>See more</h5>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="./case-card.html" class="cases__iteam">
+                                <img src="./img/case4.png" alt="photo" loading="lazy">
+                                <h3>Header</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at dolor sit amet
+                                    quam
+                                    faucibus...</p>
+                                <h5>See more</h5>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-button-prev prev__case"></div>
+                    <div class="swiper-button-next next__case"></div>
+                </div>
             </div>
         </section>
         <section class="des section">
@@ -425,8 +482,23 @@
                                     <img class="text1" src="./img/text1.svg" alt="icon">
                                     <img class="text2" src="./img/text2.svg" alt="icon">
                                 </div>
-                                <div class="swiper__r">
-                                    <img src="./img/swiper.png" alt="photo">
+                                <div class="swiper__r video_play">
+                                    <video class="myVideo" playsinline="playsinline" loop="loop" preload="metadata"
+                                        poster="//backbonepromise.com/cdn/shop/files/preview_images/5e99e9655dca47128017336a3fcd4c64.thumbnail.0000000000_1920x.jpg?v=1717634176">
+                                        <source
+                                            src="//backbonepromise.com/cdn/shop/videos/c/vp/5e99e9655dca47128017336a3fcd4c64/5e99e9655dca47128017336a3fcd4c64.HD-1080p-7.2Mbps-30087178.mp4?v=0"
+                                            type="video/mp4"><img
+                                            src="//backbonepromise.com/cdn/shop/files/preview_images/5e99e9655dca47128017336a3fcd4c64.thumbnail.0000000000_1920x.jpg?v=1717634176">
+                                    </video>
+                                    <div class="play-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="102" height="102"
+                                            viewBox="0 0 102 102" fill="none">
+                                            <circle cx="51" cy="51" r="51" fill="white" fill-opacity="0.5" />
+                                            <path
+                                                d="M72 47.5359C74.6667 49.0755 74.6667 52.9245 72 54.4641L42 71.7846C39.3333 73.3242 36 71.3997 36 68.3205L36 33.6795C36 30.6003 39.3333 28.6758 42 30.2154L72 47.5359Z"
+                                                fill="#EBEBED" />
+                                        </svg>
+                                    </div>
                                 </div>
                             </div>
 
@@ -460,8 +532,23 @@
                                     <img class="text1" src="./img/text1.svg" alt="icon">
                                     <img class="text2" src="./img/text2.svg" alt="icon">
                                 </div>
-                                <div class="swiper__r">
-                                    <img src="./img/swiper.png" alt="photo">
+                                <div class="swiper__r video_play">
+                                    <video class="myVideo" playsinline="playsinline" loop="loop" preload="metadata"
+                                        poster="//backbonepromise.com/cdn/shop/files/preview_images/5e99e9655dca47128017336a3fcd4c64.thumbnail.0000000000_1920x.jpg?v=1717634176">
+                                        <source
+                                            src="//backbonepromise.com/cdn/shop/videos/c/vp/5e99e9655dca47128017336a3fcd4c64/5e99e9655dca47128017336a3fcd4c64.HD-1080p-7.2Mbps-30087178.mp4?v=0"
+                                            type="video/mp4"><img
+                                            src="//backbonepromise.com/cdn/shop/files/preview_images/5e99e9655dca47128017336a3fcd4c64.thumbnail.0000000000_1920x.jpg?v=1717634176">
+                                    </video>
+                                    <div class="play-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="102" height="102"
+                                            viewBox="0 0 102 102" fill="none">
+                                            <circle cx="51" cy="51" r="51" fill="white" fill-opacity="0.5" />
+                                            <path
+                                                d="M72 47.5359C74.6667 49.0755 74.6667 52.9245 72 54.4641L42 71.7846C39.3333 73.3242 36 71.3997 36 68.3205L36 33.6795C36 30.6003 39.3333 28.6758 42 30.2154L72 47.5359Z"
+                                                fill="#EBEBED" />
+                                        </svg>
+                                    </div>
                                 </div>
                             </div>
 
@@ -495,8 +582,23 @@
                                     <img class="text1" src="./img/text1.svg" alt="icon">
                                     <img class="text2" src="./img/text2.svg" alt="icon">
                                 </div>
-                                <div class="swiper__r">
-                                    <img src="./img/swiper.png" alt="photo">
+                                <div class="swiper__r video_play">
+                                    <video class="myVideo" playsinline="playsinline" loop="loop" preload="metadata"
+                                        poster="//backbonepromise.com/cdn/shop/files/preview_images/5e99e9655dca47128017336a3fcd4c64.thumbnail.0000000000_1920x.jpg?v=1717634176">
+                                        <source
+                                            src="//backbonepromise.com/cdn/shop/videos/c/vp/5e99e9655dca47128017336a3fcd4c64/5e99e9655dca47128017336a3fcd4c64.HD-1080p-7.2Mbps-30087178.mp4?v=0"
+                                            type="video/mp4"><img
+                                            src="//backbonepromise.com/cdn/shop/files/preview_images/5e99e9655dca47128017336a3fcd4c64.thumbnail.0000000000_1920x.jpg?v=1717634176">
+                                    </video>
+                                    <div class="play-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="102" height="102"
+                                            viewBox="0 0 102 102" fill="none">
+                                            <circle cx="51" cy="51" r="51" fill="white" fill-opacity="0.5" />
+                                            <path
+                                                d="M72 47.5359C74.6667 49.0755 74.6667 52.9245 72 54.4641L42 71.7846C39.3333 73.3242 36 71.3997 36 68.3205L36 33.6795C36 30.6003 39.3333 28.6758 42 30.2154L72 47.5359Z"
+                                                fill="#EBEBED" />
+                                        </svg>
+                                    </div>
                                 </div>
                             </div>
 
@@ -530,8 +632,23 @@
                                     <img class="text1" src="./img/text1.svg" alt="icon">
                                     <img class="text2" src="./img/text2.svg" alt="icon">
                                 </div>
-                                <div class="swiper__r">
-                                    <img src="./img/swiper.png" alt="photo">
+                                <div class="swiper__r video_play">
+                                    <video class="myVideo" playsinline="playsinline" loop="loop" preload="metadata"
+                                        poster="//backbonepromise.com/cdn/shop/files/preview_images/5e99e9655dca47128017336a3fcd4c64.thumbnail.0000000000_1920x.jpg?v=1717634176">
+                                        <source
+                                            src="//backbonepromise.com/cdn/shop/videos/c/vp/5e99e9655dca47128017336a3fcd4c64/5e99e9655dca47128017336a3fcd4c64.HD-1080p-7.2Mbps-30087178.mp4?v=0"
+                                            type="video/mp4"><img
+                                            src="//backbonepromise.com/cdn/shop/files/preview_images/5e99e9655dca47128017336a3fcd4c64.thumbnail.0000000000_1920x.jpg?v=1717634176">
+                                    </video>
+                                    <div class="play-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="102" height="102"
+                                            viewBox="0 0 102 102" fill="none">
+                                            <circle cx="51" cy="51" r="51" fill="white" fill-opacity="0.5" />
+                                            <path
+                                                d="M72 47.5359C74.6667 49.0755 74.6667 52.9245 72 54.4641L42 71.7846C39.3333 73.3242 36 71.3997 36 68.3205L36 33.6795C36 30.6003 39.3333 28.6758 42 30.2154L72 47.5359Z"
+                                                fill="#EBEBED" />
+                                        </svg>
+                                    </div>
                                 </div>
                             </div>
 
@@ -565,8 +682,23 @@
                                     <img class="text1" src="./img/text1.svg" alt="icon">
                                     <img class="text2" src="./img/text2.svg" alt="icon">
                                 </div>
-                                <div class="swiper__r">
-                                    <img src="./img/swiper.png" alt="photo">
+                                <div class="swiper__r video_play">
+                                    <video class="myVideo" playsinline="playsinline" loop="loop" preload="metadata"
+                                        poster="//backbonepromise.com/cdn/shop/files/preview_images/5e99e9655dca47128017336a3fcd4c64.thumbnail.0000000000_1920x.jpg?v=1717634176">
+                                        <source
+                                            src="//backbonepromise.com/cdn/shop/videos/c/vp/5e99e9655dca47128017336a3fcd4c64/5e99e9655dca47128017336a3fcd4c64.HD-1080p-7.2Mbps-30087178.mp4?v=0"
+                                            type="video/mp4"><img
+                                            src="//backbonepromise.com/cdn/shop/files/preview_images/5e99e9655dca47128017336a3fcd4c64.thumbnail.0000000000_1920x.jpg?v=1717634176">
+                                    </video>
+                                    <div class="play-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="102" height="102"
+                                            viewBox="0 0 102 102" fill="none">
+                                            <circle cx="51" cy="51" r="51" fill="white" fill-opacity="0.5" />
+                                            <path
+                                                d="M72 47.5359C74.6667 49.0755 74.6667 52.9245 72 54.4641L42 71.7846C39.3333 73.3242 36 71.3997 36 68.3205L36 33.6795C36 30.6003 39.3333 28.6758 42 30.2154L72 47.5359Z"
+                                                fill="#EBEBED" />
+                                        </svg>
+                                    </div>
                                 </div>
                             </div>
 
