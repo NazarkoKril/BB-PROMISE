@@ -828,7 +828,7 @@ header {
   padding-bottom: 100px;
 }
 .des__contanier1 {
-  height: 800px;
+  height: 805px;
 }
 .des__contanier {
   display: flex;
@@ -2841,6 +2841,24 @@ footer {
   bottom: -5px;
   right: -5px;
 }
+
+.video-js {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  .video-js {
+    width: 100%;
+    height: auto;
+  }
+}
+.video-js .vjs-big-play-button {
+  left: 50% !important;
+  top: 50% !important;
+  transform: translate(-50%, -50%);
+}
 @media (max-width: 1230px) {
   .header__list {
     gap: 40px;
@@ -3077,7 +3095,6 @@ footer {
     max-width: 100%;
   }
 }
-
 @media (max-width: 850px) {
   .h__right {
     gap: 15px;
@@ -3409,7 +3426,6 @@ footer {
     height: 62px;
   }
 }
-
 @media (max-width: 500px) {
   .thanks_box form {
     gap: 30px;

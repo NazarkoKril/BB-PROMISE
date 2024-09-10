@@ -16,6 +16,8 @@
         rel="stylesheet">
     <!-- swiper -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <!-- CSS Video.js -->
+    <link href="https://vjs.zencdn.net/7.20.3/video-js.css" rel="stylesheet">
     <title>BackBone Promise</title>
 </head>
 
@@ -311,22 +313,18 @@
             <div class="container">
                 <div class="rev__box">
                     <div class="rev_l video_play">
-                        <video class="myVideo" playsinline="playsinline" loop="loop" preload="metadata"
+                        <video class="video video-js my-video" controls preload="metadata"
                             poster="//backbonepromise.com/cdn/shop/files/preview_images/5e99e9655dca47128017336a3fcd4c64.thumbnail.0000000000_1920x.jpg?v=1717634176">
                             <source
                                 src="//backbonepromise.com/cdn/shop/videos/c/vp/5e99e9655dca47128017336a3fcd4c64/5e99e9655dca47128017336a3fcd4c64.HD-1080p-7.2Mbps-30087178.mp4?v=0"
-                                type="video/mp4"><img
-                                src="//backbonepromise.com/cdn/shop/files/preview_images/5e99e9655dca47128017336a3fcd4c64.thumbnail.0000000000_1920x.jpg?v=1717634176">
+                                type="video/mp4">
+                            <p class="vjs-no-js">
+                                To view this video please enable JavaScript, and consider upgrading to a
+                                web browser that
+                                <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5
+                                    video</a>
+                            </p>
                         </video>
-                        <div class="play-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="102" height="102" viewBox="0 0 102 102"
-                                fill="none">
-                                <circle cx="51" cy="51" r="51" fill="white" fill-opacity="0.5" />
-                                <path
-                                    d="M72 47.5359C74.6667 49.0755 74.6667 52.9245 72 54.4641L42 71.7846C39.3333 73.3242 36 71.3997 36 68.3205L36 33.6795C36 30.6003 39.3333 28.6758 42 30.2154L72 47.5359Z"
-                                    fill="#EBEBED" />
-                            </svg>
-                        </div>
                     </div>
                     <div class="rev_r">
                         <p>Work format or call it <span>“Our golden ticket”</span>: We prospect, we evaluate, we make
@@ -648,6 +646,8 @@
             <h4>Copyright © 2024, Back Bone Promise. All rights reserved. See our terms of use and privacy notice.</h4>
         </div>
     </footer>
+    <!-- JS Video.js -->
+    <script src="https://vjs.zencdn.net/7.20.3/video.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./index.js"></script>

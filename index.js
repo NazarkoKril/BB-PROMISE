@@ -141,18 +141,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // video 
 
-document.querySelectorAll('.video_play').forEach(function (videoContainer) {
-    videoContainer.addEventListener('click', function () {
-        var video = videoContainer.querySelector('video');
-        var playIcon = videoContainer.querySelector('.play-icon');
 
-        if (video.paused) {
-            video.play();
-            playIcon.style.display = 'none';
-        } else {
-            video.pause();
-            playIcon.style.display = 'block';
-        }
+document.querySelectorAll('.my-video').forEach(function (videoElement) {
+    videojs(videoElement, {
+        fluid: true
     });
 });
 // case__swiper 

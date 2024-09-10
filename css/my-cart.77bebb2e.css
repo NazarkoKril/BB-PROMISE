@@ -114,7 +114,8 @@
 
 .cart-block__cell p {
     font-size: var(--fs-5);
-    margin: 0
+    margin: 0;
+    text-align: center;
 }
 
 .cart-block__desc figure {
