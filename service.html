@@ -410,6 +410,23 @@
                             <p>Get 300 items</p>
                             <p>Basic ads (100$ in Google ads)</p>
                             <a class="second__btn" href="./index.html">Get started</a>
+                            <ul class="advantages">
+                                <li><i class="checkmark">✔</i> Перевага 1</li>
+                                <li><i class="checkmark">✔</i> Перевага 2</li>
+                                <li><i class="checkmark">✔</i> Перевага 3</li>
+                                <li><i class="checkmark">✔</i> Перевага 4</li>
+                                <li><i class="checkmark">✔</i> Перевага 5</li>
+
+                                <div class="hidden-advantages">
+                                    <li><i class="checkmark">✔</i> Перевага 6</li>
+                                    <li><i class="checkmark">✔</i> Перевага 7</li>
+                                    <li><i class="checkmark">✔</i> Перевага 8</li>
+                                    <li><i class="checkmark">✔</i> Перевага 9</li>
+                                    <li><i class="checkmark">✔</i> Перевага 10</li>
+                                </div>
+                            </ul>
+
+                            <button class="toggle-features-btn ">Show all features </button>
                         </div>
                     </li>
                     <li class="price__item">
@@ -419,6 +436,22 @@
                             <p>Get 500 items</p>
                             <p>average ads</p>
                             <a class="second__btn" href="./index.html">Get started</a>
+                            <ul class="advantages">
+                                <li><i class="checkmark">✔</i> Перевага 1</li>
+                                <li><i class="checkmark">✔</i> Перевага 2</li>
+                                <li><i class="checkmark">✔</i> Перевага 3</li>
+                                <li><i class="checkmark">✔</i> Перевага 4</li>
+                                <li><i class="checkmark">✔</i> Перевага 5</li>
+
+                                <div class="hidden-advantages">
+                                    <li><i class="checkmark">✔</i> Перевага 6</li>
+                                    <li><i class="checkmark">✔</i> Перевага 7</li>
+                                    <li><i class="checkmark">✔</i> Перевага 8</li>
+                                    <li><i class="checkmark">✔</i> Перевага 9</li>
+                                    <li><i class="checkmark">✔</i> Перевага 10</li>
+                                </div>
+                            </ul>
+                            <button class="toggle-features-btn ">Show all features</button>
                         </div>
                     </li>
                     <li class="price__item">
@@ -428,6 +461,22 @@
                             <p>Get 1000 items</p>
                             <p>maximum ads on all platforms</p>
                             <a class="second__btn" href="./index.html">Get started</a>
+                            <ul class="advantages">
+                                <li><i class="checkmark">✔</i> Перевага 1</li>
+                                <li><i class="checkmark">✔</i> Перевага 2</li>
+                                <li><i class="checkmark">✔</i> Перевага 3</li>
+                                <li><i class="checkmark">✔</i> Перевага 4</li>
+                                <li><i class="checkmark">✔</i> Перевага 5</li>
+
+                                <div class="hidden-advantages">
+                                    <li><i class="checkmark">✔</i> Перевага 6</li>
+                                    <li><i class="checkmark">✔</i> Перевага 7</li>
+                                    <li><i class="checkmark">✔</i> Перевага 8</li>
+                                    <li><i class="checkmark">✔</i> Перевага 9</li>
+                                    <li><i class="checkmark">✔</i> Перевага 10</li>
+                                </div>
+                            </ul>
+                            <button class="toggle-features-btn ">Show all features</button>
                         </div>
                     </li>
                 </ul>
@@ -703,9 +752,30 @@
             <h4>Copyright © 2024, Back Bone Promise. All rights reserved. See our terms of use and privacy notice.</h4>
         </div>
     </footer>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./index.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const toggleButtons = document.querySelectorAll('.toggle-features-btn');
+            toggleButtons.forEach(button => {
+                button.addEventListener('click', function () {
+                    const hiddenAdvantages = this.parentElement.querySelector('.hidden-advantages');
+                    const priceItem = this.closest('.price__item');
+                    if (!hiddenAdvantages.classList.contains('active')) {
+                        hiddenAdvantages.classList.add('active');
+                        this.textContent = 'Hide all features';
+                    } else {
+                        hiddenAdvantages.classList.remove('active');
+                        this.textContent = 'Show all features';
+                    }
+                    priceItem.scrollIntoView({ behavior: 'smooth' });
+                });
+            });
+        });
+
+    </script>
     <script>
         // faq
         $(document).ready(function () {
@@ -723,6 +793,7 @@
             });
         });
     </script>
+
 </body>
 
 </html>

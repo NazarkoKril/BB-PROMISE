@@ -2859,6 +2859,52 @@ footer {
   top: 50% !important;
   transform: translate(-50%, -50%);
 }
+
+.checkmark {
+  color: #dd643b;
+  margin-right: 10px;
+}
+
+.advantages {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #dd643b;
+}
+
+.hidden-advantages {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, opacity 0.5s ease;
+}
+.toggle-features-btn {
+  width: 100% !important;
+}
+.hidden-advantages.active {
+  max-height: 500px;
+  opacity: 1;
+}
+.toggle-features-btn {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #000;
+  transition: var(--trans);
+  font-size: 16px;
+  margin-top: 40px;
+  border-bottom: 1px solid #ffe5d7;
+  width: fit-content;
+  margin-right: auto;
+  margin-left: auto;
+
+  &:hover {
+    color: #dd643b;
+    border-bottom: 1px solid #dd643b;
+  }
+}
 @media (max-width: 1230px) {
   .header__list {
     gap: 40px;
