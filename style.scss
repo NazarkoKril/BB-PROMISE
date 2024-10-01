@@ -2912,6 +2912,7 @@ footer {
   margin-bottom: 30px;
   overflow-y: auto;
   padding-right: 5px;
+  width: 100%;
 }
 
 .box_btn::-webkit-scrollbar {
@@ -3534,7 +3535,6 @@ footer {
     padding-left: 0px;
   }
   .quiz_form form {
-    padding-bottom: 100px;
   }
   .form_choose .slide__list {
     grid-template-columns: 1fr 1fr;
@@ -3767,5 +3767,8 @@ footer {
   }
   .book__hero {
     background-position: 6%;
+  }
+  .box_btn {
+    height: 240px;
   }
 }
