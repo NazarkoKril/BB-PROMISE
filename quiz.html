@@ -37,10 +37,24 @@
                     <div class="swiper-slide">
 
                         <form class="slide__form">
-                            <p>Are you working with lines that are lacking marketing exposure on both Google & Meta?
+                            <p>Are\ uihiuh uihiuh iuuuuuuuu with lines that are lacking marketing exposure
+                                on both Google & Meta?
                             </p>
-                            <button class="quiz__btn1">Yes</button>
-                            <button class="quiz__btn1">No</button>
+
+                            <div class="box_btn">
+                                <button class="quiz__btn1">Yes</button>
+                                <button class="quiz__btn1">Yes</button>
+                                <button class="quiz__btn1">Yes</button>
+                                <button class="quiz__btn1">Yes</button>
+                                <button class="quiz__btn1">Yes</button>
+                                <button class="quiz__btn1">Yes</button>
+                                <button class="quiz__btn1">Yes</button>
+                                <button class="quiz__btn1">Yes</button>
+                                <button class="quiz__btn1">Yes</button>
+                                <button class="quiz__btn1">Yes</button>
+
+                            </div>
+
                             <button class="first__btn">Save</button>
                         </form>
 
@@ -50,9 +64,14 @@
                             <p>Do you struggle to find brands that prioritize close collaboration with their retail
                                 partners?
                             </p>
-                            <button class="quiz__btn1">Yes</button>
-                            <button class="quiz__btn1">No</button>
-                            <button class="first__btn">Save</button>
+                            <div class="box_btn">
+                                <button class="quiz__btn1">Yes</button>
+                                <button class="quiz__btn1">Yes</button>
+                                <button class="quiz__btn1">Yes</button>
+                                <button class="quiz__btn1">Yes</button>
+
+
+                            </div>
                         </form>
                     </div>
                     <div class="swiper-slide">
@@ -68,9 +87,14 @@
                             <p>Are you working with collections that don’t have a strong digital presence? (social
                                 marketing, marketing as a whole)
                             </p>
-                            <button class="quiz__btn1">Yes</button>
-                            <button class="quiz__btn1">No</button>
-                            <button class="first__btn">Save</button>
+                            <div class="box_btn">
+                                <button class="quiz__btn1">Yes</button>
+                                <button class="quiz__btn1">Yes</button>
+                                <button class="quiz__btn1">Yes</button>
+                                <button class="quiz__btn1">Yes</button>
+                                <button class="quiz__btn1">Yes</button>
+
+                            </div>
                         </form>
                     </div>
                     <div class="swiper-slide">
@@ -78,9 +102,14 @@
                             <p>Are you looking for a brand that will not only help you with your overall customer
                                 service but also your marketing plan?
                             </p>
-                            <button class="quiz__btn1">Yes</button>
-                            <button class="quiz__btn1">No</button>
-                            <button class="first__btn">Save</button>
+                            <div class="box_btn">
+                                <button class="quiz__btn1">Yes</button>
+                                <button class="quiz__btn1">Yes</button>
+                                <button class="quiz__btn1">Yes</button>
+                                <button class="quiz__btn1">Yes</button>
+                                <button class="quiz__btn1">Yes</button>
+
+                            </div>
                         </form>
                     </div>
                     <div class="swiper-slide">
@@ -148,8 +177,13 @@
                                     <p>Are you working with lines that are lacking marketing exposure on both Google &
                                         Meta?
                                     </p>
-                                    <button class="quiz__btn1">Yes</button>
-                                    <button class="quiz__btn1">No</button>
+                                    <div class="box_btn">
+                                        <button class="quiz__btn1">Yes</button>
+                                        <button class="quiz__btn1">Yes</button>
+                                        <button class="quiz__btn1">Yes</button>
+
+
+                                    </div>
 
                                 </div>
                             </div>
@@ -185,6 +219,17 @@
                 el: ".swiper-pagination",
                 type: "fraction",
             },
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const boxBtn = document.querySelector('.box_btn');
+            const buttons = boxBtn.querySelectorAll('.quiz__btn1');
+            if (buttons.length <= 4) {
+                boxBtn.classList.add('no-scroll');
+            } else {
+                boxBtn.classList.remove('no-scroll');
+            }
         });
     </script>
 </body>

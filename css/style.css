@@ -2685,8 +2685,7 @@ footer h4 {
 }
 .slide__form p {
   color: #000;
-  text-align: justify;
-  /* Text Tablet/Paragraph */
+  text-align: left;
   font-family: "Open Sans";
   font-size: 24px;
   font-style: normal;
@@ -2991,6 +2990,39 @@ footer h4 {
 .toggle-features-btn:hover {
   color: #dd643b;
   border-bottom: 1px solid #dd643b;
+}
+
+.box_btn {
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 30px;
+  overflow-y: auto;
+  padding-right: 5px;
+}
+
+.box_btn::-webkit-scrollbar {
+  width: 10px;
+}
+
+.box_btn::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.box_btn::-webkit-scrollbar-thumb {
+  background: rgba(136, 136, 136, 0.1294117647);
+  border: 1px solid rgba(136, 136, 136, 0.7254901961);
+  border-radius: 20px;
+}
+
+.box_btn::-webkit-scrollbar-thumb:hover {
+  background: rgba(175, 175, 175, 0.337254902);
+}
+
+.box_btn.no-scroll {
+  overflow-y: hidden;
 }
 
 @media (max-width: 1230px) {
@@ -3597,7 +3629,7 @@ footer h4 {
   }
   .slide__form p {
     color: #000;
-    text-align: justify;
+    text-align: start;
     font-family: "Open Sans";
     font-size: 16px;
     font-style: normal;

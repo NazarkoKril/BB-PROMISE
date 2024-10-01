@@ -2615,9 +2615,7 @@ footer {
   margin-left: auto;
   p {
     color: #000;
-    text-align: justify;
-
-    /* Text Tablet/Paragraph */
+    text-align: left;
     font-family: "Open Sans";
     font-size: 24px;
     font-style: normal;
@@ -2905,6 +2903,39 @@ footer {
     border-bottom: 1px solid #dd643b;
   }
 }
+.box_btn {
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 30px;
+  overflow-y: auto;
+  padding-right: 5px;
+}
+
+.box_btn::-webkit-scrollbar {
+  width: 10px;
+}
+
+.box_btn::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.box_btn::-webkit-scrollbar-thumb {
+  background: #88888821;
+  border: 1px solid #888888b9;
+  border-radius: 20px;
+}
+
+.box_btn::-webkit-scrollbar-thumb:hover {
+  background: #afafaf56;
+}
+
+.box_btn.no-scroll {
+  overflow-y: hidden;
+}
+
 @media (max-width: 1230px) {
   .header__list {
     gap: 40px;
@@ -3521,7 +3552,7 @@ footer {
   }
   .slide__form p {
     color: #000;
-    text-align: justify;
+    text-align: start;
     font-family: "Open Sans";
     font-size: 16px;
     font-style: normal;
