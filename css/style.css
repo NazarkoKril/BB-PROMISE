@@ -784,9 +784,10 @@ header {
 
 .cases__iteam {
   width: 100%;
+  transition: var(--trans);
 }
-.cases__iteam:hover h3 {
-  color: #ed805b;
+.cases__iteam:hover {
+  transform: translateY(-3px);
 }
 .cases__iteam:hover h5 {
   color: #ed805b;
@@ -1417,8 +1418,7 @@ footer h4 {
 }
 
 .who__we {
-  padding-top: 110px;
-  padding-bottom: 200px;
+  padding-block: 130px;
   background: var(--Main-Beige, #ffe5d7);
 }
 
@@ -1448,6 +1448,7 @@ footer h4 {
   font-style: normal;
   font-weight: 300;
   line-height: normal;
+  text-align: justify;
 }
 .who__we_box p span {
   font-weight: 400;
@@ -1486,6 +1487,7 @@ footer h4 {
   font-weight: 300;
   line-height: normal;
   padding: 60px 55px;
+  text-align: justify;
   position: relative;
 }
 .rev_r p span {
@@ -1760,6 +1762,7 @@ footer h4 {
   font-style: normal;
   font-weight: 300;
   line-height: normal;
+  text-align: justify;
 }
 .member_l p span {
   font-weight: 400;
@@ -1849,7 +1852,7 @@ footer h4 {
 }
 .price .second__btn {
   margin-top: 30px;
-  width: fit-content;
+  width: 100%;
   margin-right: auto;
   margin-left: auto;
 }
@@ -1902,6 +1905,17 @@ footer h4 {
 .price__card:hover {
   border: 1px solid var(--Orange, #ed805b);
 }
+.price__card .advantages li::before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="13" viewBox="0 0 12 13" fill="none"><circle cx="6" cy="6.5" r="6" fill="%231D1D1F"/></svg>');
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 12px;
+  vertical-align: middle;
+}
 .price__card h4 {
   color: var(--Black, #1d1d1f);
   /* Heading Tablet/H2 */
@@ -1924,26 +1938,25 @@ footer h4 {
   line-height: normal;
   text-transform: lowercase;
 }
-.price__card p {
+.price__card h5 {
   color: var(--Black, #1d1d1f);
+  font-family: "Open Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.price__card p {
+  color: var(--Black, #535353);
   font-family: "Open Sans";
   font-size: 18px;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
-  padding-left: 45px;
+  text-align: justify;
   margin-bottom: 15px;
-}
-.price__card p::before {
-  content: "";
-  display: inline-block;
-  width: 12px;
-  height: 12px;
-  background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="13" viewBox="0 0 12 13" fill="none"><circle cx="6" cy="6.5" r="6" fill="%231D1D1F"/></svg>');
-  background-size: contain;
-  background-repeat: no-repeat;
-  margin-right: 12px;
-  vertical-align: middle;
 }
 
 .faq {
@@ -2036,6 +2049,14 @@ footer h4 {
   transition: opacity 0.5s, transform 0.5s;
   position: absolute;
   right: 15px;
+}
+
+.faq__question svg path {
+  transition: var(--trans);
+}
+
+.faq__question:hover svg path {
+  fill: #dd643b;
 }
 
 .plus-icon {
@@ -2221,6 +2242,9 @@ footer h4 {
 .case_r {
   width: 100%;
   max-width: 670px;
+}
+.case_r img {
+  border-radius: 6px;
 }
 
 .des3 {
@@ -2966,10 +2990,6 @@ footer h4 {
   transition: max-height 0.5s ease, opacity 0.5s ease;
 }
 
-.toggle-features-btn {
-  width: 100% !important;
-}
-
 .hidden-advantages.active {
   max-height: 500px;
   opacity: 1;
@@ -2984,10 +3004,11 @@ footer h4 {
   transition: var(--trans);
   font-size: 16px;
   margin-top: 40px;
-  border-bottom: 1px solid #ffe5d7;
   width: fit-content;
+  border-bottom: 1px solid #000;
   margin-right: auto;
   margin-left: auto;
+  padding-bottom: 5px;
 }
 .toggle-features-btn:hover {
   color: #dd643b;
@@ -3026,6 +3047,12 @@ footer h4 {
 
 .box_btn.no-scroll {
   overflow-y: hidden;
+}
+
+.help_form {
+  margin-top: 15px;
+  font-weight: normal;
+  font-size: 15px;
 }
 
 @media (max-width: 1230px) {
@@ -3363,7 +3390,11 @@ footer h4 {
     font-size: 14px;
   }
   .about__list {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 25px;
+  }
+  .about__list li:last-child {
+    display: none;
   }
   .receive h2 {
     font-size: 60px;
@@ -3584,6 +3615,41 @@ footer h4 {
   }
 }
 @media (max-width: 500px) {
+  .des__contanier {
+    gap: 30px;
+  }
+  .des {
+    padding-bottom: 50px;
+  }
+  .contact {
+    padding-bottom: 50px;
+  }
+  .footer__list a {
+    font-size: 15px;
+    font-weight: 400;
+  }
+  .footer__btn p {
+    font-size: 15px;
+    max-width: 250px;
+    text-align: justify;
+  }
+  .footer__soc {
+    justify-content: normal;
+    gap: 30px;
+  }
+  .rate__item p {
+    font-size: 14px;
+  }
+  .rev_r h4 {
+    text-align: left;
+    padding-left: 20px;
+  }
+  .way__item svg {
+    margin-bottom: 20px;
+  }
+  .last h2 {
+    font-size: 32px;
+  }
   .thanks_box form {
     gap: 30px;
   }
@@ -3747,13 +3813,28 @@ footer h4 {
   }
   .last h2 {
     color: var(--Black, #1d1d1f);
-    /* Heading_Phone/H2_Phone */
     font-family: "PT Serif";
-    font-size: 28px;
+    margin-bottom: 35px;
     font-style: normal;
     font-weight: 400;
     line-height: 120%; /* 33.6px */
     text-transform: uppercase;
+  }
+  .last__item img {
+    object-fit: cover;
+    height: 300px;
+  }
+  .serv .des__contanier img {
+    object-fit: cover;
+    height: 250px;
+  }
+  .price h2 {
+    text-align: left;
+    font-size: 60px;
+  }
+  .book__hero h2 {
+    font-size: 70px;
+    line-height: normal;
   }
   .price__card {
     padding: 40px;
@@ -3761,8 +3842,27 @@ footer h4 {
   .faq__answer {
     font-size: 16px;
   }
-  .contact {
-    padding-block: 80px;
+  .des2 .des__l p {
+    margin-block: 15px;
+  }
+  .des {
+    padding-block: 25px !important;
+  }
+  .des__r img {
+    object-fit: cover;
+    height: 250px;
+    border-radius: 6px;
+  }
+  .cases__iteam img {
+    object-fit: cover;
+    height: 250px;
+    border-radius: 6px;
+  }
+  .blog__card .hero__link {
+    margin-bottom: 25px;
+  }
+  .blog__card .hero__link a {
+    font-size: 15px;
   }
   .receive__list {
     gap: 50px;
