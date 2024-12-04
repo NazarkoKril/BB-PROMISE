@@ -41,7 +41,7 @@ html {
 }
 
 body {
-  background-color: #ebebed;
+  background-color: #fff;
 }
 
 body,
@@ -141,7 +141,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 64px;
+  gap: 40px;
 }
 
 .header__link {
@@ -176,7 +176,7 @@ header {
 .h__right {
   display: flex;
   align-items: center;
-  gap: 28px;
+  gap: 20px;
 }
 .h__right div {
   width: 1px;
@@ -218,7 +218,7 @@ header {
 
 .burger__icon {
   width: 30px;
-  height: 26px;
+  height: 25px;
   display: none;
   flex-direction: column;
   justify-content: space-between;
@@ -229,7 +229,7 @@ header {
 
 .burger__icon div {
   width: 100%;
-  height: 3px;
+  height: 2px;
   background-color: #1c1c1c;
   transition: all 0.3s ease;
   border-radius: 3px;
@@ -277,7 +277,7 @@ header {
   flex-direction: column;
   align-items: start;
   gap: 20px;
-  padding-top: 80px;
+  padding-top: 100px;
   width: 100%;
 }
 
@@ -334,7 +334,7 @@ header {
 }
 
 .h__center {
-  margin-left: 94px;
+  margin-left: 40px;
 }
 
 .burger {
@@ -362,6 +362,9 @@ header {
     position: absolute;
     right: 80px;
     z-index: 9999;
+  }
+  .h__left img {
+    width: 80%;
   }
 }
 .burger__menu .header__list {
@@ -884,7 +887,7 @@ header {
   align-items: flex-start;
   justify-content: space-between;
   gap: 100px;
-  height: 760px;
+  height: 800px;
 }
 
 .des__r1 {
@@ -894,6 +897,7 @@ header {
 .des__l {
   width: 100%;
   max-width: 520px;
+  height: 100%;
 }
 .des__l h2 {
   color: #000;
@@ -905,7 +909,6 @@ header {
 }
 .des__l p {
   color: #000;
-  text-align: justify;
   font-family: "Open Sans";
   font-size: 18px;
   font-style: normal;
@@ -928,7 +931,6 @@ header {
 
 .des1 {
   background: var(--Main-Beige, #ffe5d7);
-  padding-left: 160px;
   padding-bottom: 0px;
 }
 .des1 .des__contanier {
@@ -936,6 +938,7 @@ header {
 }
 .des1 .des__l {
   max-width: 515px;
+  height: 100%;
 }
 .des1 .des__l h2 {
   color: #000;
@@ -944,7 +947,6 @@ header {
   font-style: normal;
   font-weight: 400;
   line-height: 74px; /* 115.625% */
-  text-transform: uppercase;
 }
 .des1 .des__l p {
   color: #000;
@@ -982,15 +984,14 @@ header {
 }
 
 .des2 {
+  padding-bottom: 80px;
   padding-top: 80px;
-  padding-bottom: 0px;
 }
 .des2 .des__l {
   max-width: 540px;
 }
 .des2 .des__l h3 {
   color: #000;
-  /* Text Tablet/Paragraph */
   font-family: "Open Sans";
   font-size: 24px;
   font-style: normal;
@@ -999,7 +1000,7 @@ header {
   margin-top: 60px;
 }
 .des2 .des__l p {
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 .feedback {
@@ -1735,7 +1736,6 @@ footer h4 {
   font-style: normal;
   font-weight: 400;
   line-height: 120px; /* 107.143% */
-  text-transform: uppercase;
 }
 .serv p {
   color: #000;
@@ -1753,14 +1753,13 @@ footer h4 {
 .member__box {
   display: flex;
   width: 100%;
-  align-items: flex-end;
   justify-content: space-between;
   gap: 40px;
 }
 
 .member_l {
   width: 100%;
-  max-width: 790px;
+  max-width: 520px;
 }
 .member_l h3 {
   color: #000;
@@ -1772,14 +1771,13 @@ footer h4 {
   text-transform: uppercase;
 }
 .member_l h4 {
-  color: #000;
+  color: var(--Black, #1d1d1f);
   font-family: "Open Sans";
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  margin-top: 50px;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 }
 .member_l p {
   color: #000;
@@ -1788,7 +1786,7 @@ footer h4 {
   font-style: normal;
   font-weight: 300;
   line-height: normal;
-  text-align: justify;
+  margin-bottom: 100px;
 }
 .member_l p span {
   font-weight: 400;
@@ -1797,9 +1795,32 @@ footer h4 {
   content: "• ";
 }
 
+.serv_box {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 18px;
+}
+.serv_box img {
+  max-width: 28px;
+}
+.serv_box p {
+  color: var(--Black, #1d1d1f);
+  /* Tablet/Text/Body */
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  text-align: left;
+  margin-bottom: 24px;
+}
+
 .member_r {
   border-radius: 8px;
   overflow: hidden;
+  width: 100%;
+  max-width: 925px;
 }
 
 .wgive {
@@ -1813,7 +1834,6 @@ footer h4 {
   font-style: normal;
   font-weight: 400;
   line-height: 74px; /* 115.625% */
-  text-transform: uppercase;
   margin-bottom: 70px;
 }
 
@@ -1849,6 +1869,7 @@ footer h4 {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  margin-bottom: 14px;
 }
 .wgive__item p {
   color: var(--Black, #1d1d1f);
@@ -1857,7 +1878,6 @@ footer h4 {
   font-style: normal;
   font-weight: 300;
   line-height: normal;
-  text-align: justify;
 }
 
 .wgive__info {
@@ -2142,6 +2162,11 @@ footer h4 {
   text-align: center;
 }
 
+.case__hero1::after {
+  opacity: 1 !important;
+  background: rgba(255, 229, 215, 0.85) !important;
+}
+
 .case__hero {
   background-image: url(../img/cases.png);
   background-position: center;
@@ -2151,7 +2176,7 @@ footer h4 {
   padding-bottom: 420px;
   position: relative;
   z-index: 1;
-  height: 100vh;
+  height: 850px;
 }
 .case__hero::after {
   content: "";
@@ -2160,7 +2185,8 @@ footer h4 {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(212, 228, 235, 0.85);
+  opacity: 0.5;
+  background: var(--Light-Grey, #ebebed);
   z-index: -1;
 }
 .case__hero h2 {
@@ -2170,8 +2196,6 @@ footer h4 {
   font-style: normal;
   font-weight: 400;
   line-height: 120px; /* 107.143% */
-  text-transform: uppercase;
-  text-align: center;
 }
 
 .case1::after {
@@ -2244,13 +2268,11 @@ footer h4 {
 .case_l h2 {
   color: #000;
   text-align: left;
-  /* Heading Tablet/H1 */
   font-family: "PT Serif";
-  font-size: 112px;
+  font-size: 64px;
   font-style: normal;
   font-weight: 400;
   line-height: 120px; /* 107.143% */
-  text-transform: uppercase;
   margin-bottom: 40px;
   margin-top: 75px;
 }
@@ -2267,10 +2289,14 @@ footer h4 {
 
 .case_r {
   width: 100%;
-  max-width: 670px;
+  max-width: 920px;
+  height: 500px;
 }
 .case_r img {
   border-radius: 6px;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .des3 {
@@ -2392,7 +2418,7 @@ footer h4 {
 }
 
 .case_l {
-  max-width: 700px;
+  max-width: 520px;
 }
 .case_l p {
   color: #000;
@@ -3081,12 +3107,26 @@ footer h4 {
   font-size: 15px;
 }
 
+.member h3 {
+  color: var(--Black, #1d1d1f);
+  font-family: "PT Serif";
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  margin-bottom: 80px;
+  text-align: center;
+}
+
 @media (max-width: 1300px) {
   .header__list {
     gap: 30px;
   }
 }
 @media (max-width: 1150px) {
+  .serv_sect .des__contanier {
+    flex-direction: column !important;
+  }
   .des__contanier {
     height: auto;
   }
@@ -3328,6 +3368,18 @@ footer h4 {
   }
   .case_l {
     max-width: 100%;
+  }
+  .member h3 {
+    font-size: 28px;
+    text-transform: uppercase;
+    text-align: left;
+    margin-bottom: 36px;
+  }
+  .member_l p {
+    margin-bottom: 20px;
+  }
+  .member__box {
+    flex-direction: column-reverse;
   }
 }
 @media (max-width: 850px) {
@@ -3576,7 +3628,6 @@ footer h4 {
     font-style: normal;
     font-weight: 400;
     line-height: 110%; /* 66px */
-    text-transform: uppercase;
   }
   .member_l h3 {
     font-size: 28px;
@@ -3656,6 +3707,9 @@ footer h4 {
   }
 }
 @media (max-width: 500px) {
+  .case__hero {
+    height: 100vh;
+  }
   .des__contanier {
     gap: 30px;
   }
