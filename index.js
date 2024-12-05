@@ -182,3 +182,29 @@ const swiper5 = new Swiper('.case__swiper', {
         }
     }
 });
+
+const swiper6 = new Swiper('.blog_slider', {
+    navigation: {
+        nextEl: ".blog_next",
+        prevEl: ".blog_prev",
+    },
+    slidesPerView: 3,
+    spaceBetween: 20,
+    speed: 800,
+    breakpoints: {
+
+        320: {
+            slidesPerView: 1,
+            spaceBetween: 15
+        },
+
+        950: {
+            slidesPerView: 2,
+            spaceBetween: 20
+        },
+        1150: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+        }
+    }
+});
