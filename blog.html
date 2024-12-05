@@ -241,24 +241,73 @@
             <div class="rose_round "></div>
             <div class="container">
                 <h2>Blog</h2>
-                <ul class="blog__list section">
+                <div class="blog_btn">
+                    <div class="left">
+                        <button class="second__btn">All posts</button>
+                        <div class="blog-dropdown">
+                            <button class="blog-dropdown-button" onclick="toggleDropdown()">
+                                By category
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="11" viewBox="0 0 18 11"
+                                    fill="none">
+                                    <path d="M1 1.5L9 9.5L17 1.5" stroke="#1D1D1F" stroke-width="2" />
+                                </svg>
+                            </button>
+                            <div id="blog-dropdown-content" class="blog-dropdown-content">
+                                <label class="blog-custom-option">
+                                    <input type="radio" name="category" />
+                                    <span class="blog-custom-circle">
+                                        <span class="blog-inner-circle"></span>
+                                    </span>
+                                    <p>Category Category 1</p>
+                                </label>
+                                <label class="blog-custom-option">
+                                    <input type="radio" name="category" />
+                                    <span class="blog-custom-circle">
+                                        <span class="blog-inner-circle"></span>
+                                    </span>
+                                    <p>Category 2</p>
+                                </label>
+                                <label class="blog-custom-option">
+                                    <input type="radio" name="category" />
+                                    <span class="blog-custom-circle">
+                                        <span class="blog-inner-circle"></span>
+                                    </span>
+                                    <p>Category 3</p>
+                                </label>
+                                <label class="blog-custom-option">
+                                    <input type="radio" name="category" />
+                                    <span class="blog-custom-circle">
+                                        <span class="blog-inner-circle"></span>
+                                    </span>
+                                    <p>Category 4</p>
+                                </label>
+                                <label class="blog-custom-option last1">
+                                    <input type="radio" name="category" />
+                                    <span class="blog-custom-circle">
+                                        <span class="blog-inner-circle"></span>
+                                    </span>
+                                    <p>Category 5</p>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44" fill="none">
+                            <path
+                                d="M24.5473 24.5468L34.834 34.8335M17.4173 27.5002C22.9862 27.5002 27.5007 22.9857 27.5007 17.4168C27.5007 11.848 22.9862 7.3335 17.4173 7.3335C11.8484 7.3335 7.33398 11.848 7.33398 17.4168C7.33398 22.9857 11.8484 27.5002 17.4173 27.5002Z"
+                                stroke="#1D1D1F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <input type="text" placeholder="Search...">
+                    </div>
+                </div>
+                <div class="blog__list section">
                     <div class="blue_round cases2"></div>
                     <div class="rose_round cases3"></div>
                     <a href="./blog-card.html" class="cases__iteam">
                         <img src="./img/blog1.png" alt="photo" loading="lazy">
                         <div class="blog__info">
+                            <h4>Name of category Name of category</h4>
                             <p>03.07.2024</p>
-                            <div class="time">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25"
-                                    fill="none">
-                                    <path
-                                        d="M12 6.5V12.5L16 14.5M22 12.5C22 18.0228 17.5228 22.5 12 22.5C6.47715 22.5 2 18.0228 2 12.5C2 6.97715 6.47715 2.5 12 2.5C17.5228 2.5 22 6.97715 22 12.5Z"
-                                        stroke="#1D1D1F" stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
-                                <p>
-                                    3 min
-                                </p>
-                            </div>
                         </div>
                         <h3>Back Bone Promise & All The Benefits</h3>
                         <p>Have you ever felt like your business has hit a plateau? Or maybe you’re just starting out
@@ -269,18 +318,8 @@
                     <a href="./blog-card.html" class="cases__iteam">
                         <img src="./img/blog2.png" alt="photo" loading="lazy">
                         <div class="blog__info">
+                            <h4>Name of category Name of category</h4>
                             <p>03.07.2024</p>
-                            <div class="time">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25"
-                                    fill="none">
-                                    <path
-                                        d="M12 6.5V12.5L16 14.5M22 12.5C22 18.0228 17.5228 22.5 12 22.5C6.47715 22.5 2 18.0228 2 12.5C2 6.97715 6.47715 2.5 12 2.5C17.5228 2.5 22 6.97715 22 12.5Z"
-                                        stroke="#1D1D1F" stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
-                                <p>
-                                    3 min
-                                </p>
-                            </div>
                         </div>
                         <h3>Name of post</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at dolor sit amet quam
@@ -291,18 +330,8 @@
                     <a href="./blog-card.html" class="cases__iteam">
                         <img src="./img/blog3.png" alt="photo" loading="lazy">
                         <div class="blog__info">
+                            <h4>Name of category Name of category</h4>
                             <p>03.07.2024</p>
-                            <div class="time">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25"
-                                    fill="none">
-                                    <path
-                                        d="M12 6.5V12.5L16 14.5M22 12.5C22 18.0228 17.5228 22.5 12 22.5C6.47715 22.5 2 18.0228 2 12.5C2 6.97715 6.47715 2.5 12 2.5C17.5228 2.5 22 6.97715 22 12.5Z"
-                                        stroke="#1D1D1F" stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
-                                <p>
-                                    3 min
-                                </p>
-                            </div>
                         </div>
                         <h3>Name of post</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at dolor sit amet quam
@@ -313,18 +342,8 @@
                     <a href="./blog-card.html" class="cases__iteam">
                         <img src="./img/blog4.png" alt="photo" loading="lazy">
                         <div class="blog__info">
+                            <h4>Name of category Name of category</h4>
                             <p>03.07.2024</p>
-                            <div class="time">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25"
-                                    fill="none">
-                                    <path
-                                        d="M12 6.5V12.5L16 14.5M22 12.5C22 18.0228 17.5228 22.5 12 22.5C6.47715 22.5 2 18.0228 2 12.5C2 6.97715 6.47715 2.5 12 2.5C17.5228 2.5 22 6.97715 22 12.5Z"
-                                        stroke="#1D1D1F" stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
-                                <p>
-                                    3 min
-                                </p>
-                            </div>
                         </div>
                         <h3>Name of post</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at dolor sit amet quam
@@ -335,18 +354,8 @@
                     <a href="./blog-card.html" class="cases__iteam">
                         <img src="./img/blog5.png" alt="photo" loading="lazy">
                         <div class="blog__info">
+                            <h4>Name of category Name of category</h4>
                             <p>03.07.2024</p>
-                            <div class="time">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25"
-                                    fill="none">
-                                    <path
-                                        d="M12 6.5V12.5L16 14.5M22 12.5C22 18.0228 17.5228 22.5 12 22.5C6.47715 22.5 2 18.0228 2 12.5C2 6.97715 6.47715 2.5 12 2.5C17.5228 2.5 22 6.97715 22 12.5Z"
-                                        stroke="#1D1D1F" stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
-                                <p>
-                                    3 min
-                                </p>
-                            </div>
                         </div>
                         <h3>Name of post</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at dolor sit amet quam
@@ -357,18 +366,8 @@
                     <a href="./blog-card.html" class="cases__iteam">
                         <img src="./img/blog6.png" alt="photo" loading="lazy">
                         <div class="blog__info">
+                            <h4>Name of category Name of category</h4>
                             <p>03.07.2024</p>
-                            <div class="time">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25"
-                                    fill="none">
-                                    <path
-                                        d="M12 6.5V12.5L16 14.5M22 12.5C22 18.0228 17.5228 22.5 12 22.5C6.47715 22.5 2 18.0228 2 12.5C2 6.97715 6.47715 2.5 12 2.5C17.5228 2.5 22 6.97715 22 12.5Z"
-                                        stroke="#1D1D1F" stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
-                                <p>
-                                    3 min
-                                </p>
-                            </div>
                         </div>
                         <h3>Name of post</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at dolor sit amet quam
@@ -376,7 +375,23 @@
                             adipiscing elit...</p>
                         <h5>Read more</h5>
                     </a>
-                </ul>
+                </div>
+            </div>
+        </section>
+        <section class="letter_sect">
+            <div class="container">
+                <div class="flex">
+                    <div class="left">
+                        <h2>NEWSLETTER</h2>
+                        <p>Stay ahead in the fashion industry with fresh ideas, effective strategies, and the latest
+                            updates from Back Bone
+                            Promise! Subscribe to elevate your clothing store and grow your brand.</p>
+                    </div>
+                    <div class="right">
+                        <input type="text" placeholder="Your email" required>
+                        <button class="first__btn">Subscribe</button>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
@@ -510,6 +525,29 @@
             <h4>Copyright © 2024, Back Bone Promise. All rights reserved. See our terms of use and privacy notice.</h4>
         </div>
     </footer>
+    <script>
+        function toggleDropdown() {
+            const dropdown = document.getElementById("blog-dropdown-content");
+            if (dropdown.style.display === "none" || dropdown.style.display === "") {
+                dropdown.style.display = "block";
+            } else {
+                dropdown.style.display = "none";
+            }
+        }
+
+        // Закривання випадаючого списку, якщо користувач клацне за межами списку
+        window.onclick = function (event) {
+            if (!event.target.matches('.blog-dropdown-button') && !event.target.closest('.blog-dropdown')) {
+                const dropdowns = document.getElementsByClassName("blog-dropdown-content");
+                for (let i = 0; i < dropdowns.length; i++) {
+                    const openDropdown = dropdowns[i];
+                    if (openDropdown.style.display === "block") {
+                        openDropdown.style.display = "none";
+                    }
+                }
+            }
+        }
+    </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./index.js"></script>
