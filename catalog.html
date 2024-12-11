@@ -246,170 +246,329 @@
                 <div class="link">
                     <a href="./catalog.html">Catalog</a>
                     <p>-</p>
-                    <a href="#">T-Shirts</a>
+                    <a href="#"><b>T-Shirts</b></a>
                 </div>
                 <div class="top__main">
                     <h2>T-Shirts</h2>
                 </div>
                 <div class="catalog">
                     <aside class="filters">
+                        <h1 class="choits_title">Filters</h1>
                         <div class="choices-container">
-                            <p class="choices-title">Filters</p>
+
+                            <div class="clear">
+                                <p>Clear all filters</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25"
+                                    fill="none">
+                                    <path d="M19 5.5L5 19.5M5.00001 5.5L19 19.5" stroke="#8D8D8E" stroke-width="2"
+                                        stroke-linecap="square" stroke-linejoin="round" />
+                                </svg>
+                            </div>
                             <div class="choices"></div>
                         </div>
 
                         <div class="categories-container">
-                            <ul class="filt__list">
-                                <li class="fill__item">
-                                    <a href="">Lifestyle</a>
-                                </li>
-                                <li class="fill__item">
-                                    <a href="">Running</a>
-                                </li>
-                                <li class="fill__item">
-                                    <a href="">Basketball</a>
-                                </li>
-                                <li class="fill__item">
-                                    <a href="">Training & Gym</a>
-                                </li>
-                                <li class="fill__item">
-                                    <a href="">Walking</a>
-                                </li>
-                            </ul>
+
                             <ul class="link-category-list">
-                                <li> <a class="link-category"><span class="icon-[custom--chevron]"></span>Gender</a>
-                                    <ol data-category="Headdress">
-                                        <li class="categories-checkbox form-checkbox"> <label><input type="checkbox"
-                                                    name="checkbox"><span>Position 1</span></label> </li>
-                                        <li class="categories-checkbox form-checkbox"> <label><input type="checkbox"
-                                                    name="checkbox"><span>Position 2</span></label> </li>
-                                        <li class="categories-checkbox form-checkbox"> <label><input type="checkbox"
-                                                    name="checkbox"><span>Position 3</span></label> </li>
-                                        <li class="categories-checkbox form-checkbox"> <label><input type="checkbox"
-                                                    name="checkbox"><span>Position 4</span></label> </li>
+                                <li> <a class="link-category">
+                                        <p>Availability</p>
+                                        <span class="icon-[custom--chevron]"></span>
+                                    </a>
+                                    <ol data-category="Availability">
+                                        <li class="categories-checkbox form-checkbox">
+                                            <label class="chek_label">
+                                                <input type="checkbox" name="checkbox">
+                                                <p>In stock <span class="gray">(38)</span></p>
+                                            </label>
+                                        </li>
+                                        <li class="categories-checkbox form-checkbox">
+                                            <label class="chek_label">
+                                                <input disabled type="checkbox" name="checkbox">
+                                                <p class="disable">Out of stock <span class="disable">(38)</span></p>
+                                            </label>
+                                        </li>
+
+
                                     </ol>
                                 </li>
-                                <li> <a class="link-category"><span class="icon-[custom--chevron]"></span>Sale &
-                                        Offers</a>
-                                    <ol data-category="T-Shirts">
-                                        <li class="categories-checkbox form-checkbox"> <label><input type="checkbox"
-                                                    name="checkbox"><span>Position
-                                                    1</span></label> </li>
-                                        <li class="categories-checkbox form-checkbox"> <label><input type="checkbox"
-                                                    name="checkbox"><span>Position
-                                                    2</span></label> </li>
-                                        <li class="categories-checkbox form-checkbox"> <label><input type="checkbox"
-                                                    name="checkbox"><span>Position
-                                                    3</span></label> </li>
-                                        <li class="categories-checkbox form-checkbox"> <label><input type="checkbox"
-                                                    name="checkbox"><span>Position
-                                                    4</span></label> </li>
+                                <li> <a class="link-category">
+                                        <p>Product type</p>
+                                        <span class="icon-[custom--chevron]"></span>
+                                        <h5 class="red">1</h5>
+                                    </a>
+                                    <ol data-category="Product type">
+                                        <div class="choice-dropdown choice">
+                                            <div class="choice-header" onclick="toggleDropdown1(this)">
+                                                <span class="choice-arrow">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 11"
+                                                        fill="none">
+                                                        <path d="M1 1.5L9 9.5L17 1.5" stroke="#1D1D1F"
+                                                            stroke-width="2" />
+                                                    </svg>
+                                                </span>
+                                                <p>Baby tee <span class="gray">(12)</span></p>
+
+                                            </div>
+                                            <div class="choice-content">
+                                                <li class="categories-checkbox form-checkbox">
+                                                    <label class="chek_label">
+                                                        <input type="checkbox" name="checkbox">
+                                                        <p>Product <span class="disable">(10)</span></p>
+                                                    </label>
+                                                </li>
+                                                <li class="categories-checkbox form-checkbox">
+                                                    <label class="chek_label">
+                                                        <input type="checkbox" name="checkbox">
+                                                        <p>Product <span class="disable">(2)</span></p>
+                                                    </label>
+                                                </li>
+                                                <li class="categories-checkbox form-checkbox">
+                                                    <label class="chek_label">
+                                                        <input disabled type="checkbox" name="checkbox">
+                                                        <p class="disable">Product <span class="disable">(0)</span></p>
+                                                    </label>
+                                                </li>
+                                            </div>
+                                        </div>
+                                        <div class="choice-dropdown choice">
+                                            <div class="choice-header" onclick="toggleDropdown1(this)">
+                                                <span class="choice-arrow">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 11"
+                                                        fill="none">
+                                                        <path d="M1 1.5L9 9.5L17 1.5" stroke="#1D1D1F"
+                                                            stroke-width="2" />
+                                                    </svg>
+                                                </span>
+                                                <p>Cropped pullover <span class="gray">(11)</span></p>
+
+                                            </div>
+                                            <div class="choice-content">
+                                                <li class="categories-checkbox form-checkbox">
+                                                    <label class="chek_label">
+                                                        <input type="checkbox" name="checkbox">
+                                                        <p>Product <span class="disable">(10)</span></p>
+                                                    </label>
+                                                </li>
+                                                <li class="categories-checkbox form-checkbox">
+                                                    <label class="chek_label">
+                                                        <input type="checkbox" name="checkbox">
+                                                        <p>Product <span class="disable">(2)</span></p>
+                                                    </label>
+                                                </li>
+                                                <li class="categories-checkbox form-checkbox">
+                                                    <label class="chek_label">
+                                                        <input disabled type="checkbox" name="checkbox">
+                                                        <p class="disable">Product <span class="disable">(0)</span></p>
+                                                    </label>
+                                                </li>
+                                            </div>
+                                        </div>
+                                        <div class="choice-dropdown choice">
+                                            <div class="choice-header" onclick="toggleDropdown1(this)">
+                                                <span class="choice-arrow">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 11"
+                                                        fill="none">
+                                                        <path d="M1 1.5L9 9.5L17 1.5" stroke="#1D1D1F"
+                                                            stroke-width="2" />
+                                                    </svg>
+                                                </span>
+                                                <p>T-Shirt <span class="gray">(13)</span></p>
+
+                                            </div>
+                                            <div class="choice-content">
+                                                <li class="categories-checkbox form-checkbox">
+                                                    <label class="chek_label">
+                                                        <input type="checkbox" name="checkbox">
+                                                        <p>Product <span class="disable">(10)</span></p>
+                                                    </label>
+                                                </li>
+                                                <li class="categories-checkbox form-checkbox">
+                                                    <label class="chek_label">
+                                                        <input type="checkbox" name="checkbox">
+                                                        <p>Product <span class="disable">(2)</span></p>
+                                                    </label>
+                                                </li>
+                                                <li class="categories-checkbox form-checkbox">
+                                                    <label class="chek_label">
+                                                        <input disabled type="checkbox" name="checkbox">
+                                                        <p class="disable">Product <span class="disable">(0)</span></p>
+                                                    </label>
+                                                </li>
+                                            </div>
+                                        </div>
                                     </ol>
                                 </li>
-                                <li> <a class="link-category"><span class="icon-[custom--chevron]"></span>Brand</a>
-                                    <ol data-category="T-Shirts">
-                                        <li class="categories-checkbox form-checkbox"> <label><input type="checkbox"
-                                                    name="checkbox"><span>Position
-                                                    1</span></label> </li>
-                                        <li class="categories-checkbox form-checkbox"> <label><input type="checkbox"
-                                                    name="checkbox"><span>Position
-                                                    2</span></label> </li>
-                                        <li class="categories-checkbox form-checkbox"> <label><input type="checkbox"
-                                                    name="checkbox"><span>Position
-                                                    3</span></label> </li>
-                                        <li class="categories-checkbox form-checkbox"> <label><input type="checkbox"
-                                                    name="checkbox"><span>Position
-                                                    4</span></label> </li>
-                                    </ol>
-                                </li>
-                                <li> <a class="link-category"><span class="icon-[custom--chevron]"></span>Style</a>
-                                    <ol data-category="T-Shirts">
-                                        <li class="categories-checkbox form-checkbox"> <label><input type="checkbox"
-                                                    name="checkbox"><span>Position
-                                                    1</span></label> </li>
-                                        <li class="categories-checkbox form-checkbox"> <label><input type="checkbox"
-                                                    name="checkbox"><span>Position
-                                                    2</span></label> </li>
-                                        <li class="categories-checkbox form-checkbox"> <label><input type="checkbox"
-                                                    name="checkbox"><span>Position
-                                                    3</span></label> </li>
-                                        <li class="categories-checkbox form-checkbox"> <label><input type="checkbox"
-                                                    name="checkbox"><span>Position
-                                                    4</span></label> </li>
-                                    </ol>
-                                </li>
-                                <li> <a class="link-category"><span class="icon-[custom--chevron]"></span>Colour</a>
-                                    <ol data-category="T-Shirts">
-                                        <li class="categories-checkbox form-checkbox"> <label><input type="checkbox"
-                                                    name="checkbox"><span>Position
-                                                    1</span></label> </li>
-                                        <li class="categories-checkbox form-checkbox"> <label><input type="checkbox"
-                                                    name="checkbox"><span>Position
-                                                    2</span></label> </li>
-                                        <li class="categories-checkbox form-checkbox"> <label><input type="checkbox"
-                                                    name="checkbox"><span>Position
-                                                    3</span></label> </li>
-                                        <li class="categories-checkbox form-checkbox"> <label><input type="checkbox"
-                                                    name="checkbox"><span>Position
-                                                    4</span></label> </li>
-                                    </ol>
-                                </li>
-                                <li> <a class="link-category"><span class="icon-[custom--chevron]"></span>Boot Type</a>
-                                    <ol data-category="T-Shirts">
-                                        <li class="categories-checkbox form-checkbox"> <label><input type="checkbox"
-                                                    name="checkbox"><span>Position
-                                                    1</span></label> </li>
-                                        <li class="categories-checkbox form-checkbox"> <label><input type="checkbox"
-                                                    name="checkbox"><span>Position
-                                                    2</span></label> </li>
-                                        <li class="categories-checkbox form-checkbox"> <label><input type="checkbox"
-                                                    name="checkbox"><span>Position
-                                                    3</span></label> </li>
-                                        <li class="categories-checkbox form-checkbox"> <label><input type="checkbox"
-                                                    name="checkbox"><span>Position
-                                                    4</span></label> </li>
-                                    </ol>
-                                </li>
-                                <li> <a class="link-category"><span class="icon-[custom--chevron]"></span>Upper
-                                        material</a>
-                                    <ol data-category="T-Shirts">
-                                        <li class="categories-checkbox form-checkbox"> <label><input type="checkbox"
-                                                    name="checkbox"><span>Position
-                                                    1</span></label> </li>
-                                        <li class="categories-checkbox form-checkbox"> <label><input type="checkbox"
-                                                    name="checkbox"><span>Position
-                                                    2</span></label> </li>
-                                        <li class="categories-checkbox form-checkbox"> <label><input type="checkbox"
-                                                    name="checkbox"><span>Position
-                                                    3</span></label> </li>
-                                        <li class="categories-checkbox form-checkbox"> <label><input type="checkbox"
-                                                    name="checkbox"><span>Position
-                                                    4</span></label> </li>
-                                    </ol>
-                                </li>
-                                <li> <a class="link-category"><span class="icon-[custom--chevron]"></span>Price</a>
-                                    <ol data-category="T-Shirts" style="padding-left: 0px;">
+
+                                <li style="width: 300px; "><a class="link-category"
+                                        style="pointer-events: none;"></span>Price</a>
+                                    <ol data-category="Price" style="padding-left: 0px; display: block !important; ">
                                         <div class="range">
                                             <div class="h-[0.1875rem] range__slider rounded-[0.1875rem]"> <span
                                                     class="left-[30%] range__selected right-[30%] rounded-[0.1875rem]"></span>
                                             </div>
                                             <div class="range__input"> <input type="range"
-                                                    class="-top-[0.1875rem] h-[0.1875rem] min" min="100" max="100000"
-                                                    value="3000" step="100"> <input type="range"
-                                                    class="-top-[0.1875rem] h-[0.1875rem] max" min="100" max="100000"
-                                                    value="70000" step="100"> </div>
+                                                    class="-top-[0.1875rem] h-[0.1875rem] min" min="10" max="1000"
+                                                    value="30" step="10"> <input type="range"
+                                                    class="-top-[0.1875rem] h-[0.1875rem] max" min="10" max="1000"
+                                                    value="700" step="10"> </div>
                                             <div class="range__price"> <label>$ <input
                                                         class="py-[0.1875rem] w-[4.125rem]" type="number" name="min"
-                                                        value="3000"></label> <label>$ <input
-                                                        class="py-[0.1875rem] w-[4.125rem]" type="number" name="max"
-                                                        value="70000"></label> </div>
+                                                        value="300"></label>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="2"
+                                                    viewBox="0 0 24 2" fill="none">
+                                                    <path d="M0 1H24" stroke="#1D1D1F" stroke-width="2" />
+                                                </svg>
+                                                <label>$ <input class="py-[0.1875rem] w-[4.125rem]" type="number"
+                                                        name="max" value="700"></label>
+                                            </div>
                                         </div>
                                     </ol>
                                 </li>
+                                <li> <a class="link-category">
+                                        <p>Color</p>
+                                        <span class="icon-[custom--chevron]"></span>
+                                    </a>
+                                    <ol data-category="Color">
+                                        <li class="categories-checkbox form-checkbox">
+                                            <label class="chek_label">
+                                                <input type="checkbox" name="checkbox" hidden>
+                                                <div class="color " style="background-color: black;">Black</div>
+                                                <p>Black <span class="gray">(13)</span></p>
+                                            </label>
+                                        </li>
+                                        <li class="categories-checkbox form-checkbox">
+                                            <label class="chek_label">
+                                                <input type="checkbox" name="checkbox" hidden>
+                                                <div class="color" style="background-color: #CFBDEF;">Lavender</div>
+                                                <p>Lavender <span class="gray">(13)</span></p>
+                                            </label>
+                                        </li>
 
+                                        <li class="categories-checkbox form-checkbox">
+                                            <label class="chek_label">
+                                                <input type="checkbox" name="checkbox" hidden>
+                                                <div class="color" style="background-color: #F9F0E9;">Natural</div>
+                                                <p>Natural <span class="gray">(13)</span></p>
+                                            </label>
+                                        </li>
+                                        <li class="categories-checkbox form-checkbox">
+                                            <label class="chek_label">
+                                                <input type="checkbox" name="checkbox" hidden>
+                                                <div class="color " style="background-color: black;">Black</div>
+                                                <p>Black <span class="gray">(13)</span></p>
+                                            </label>
+                                        </li>
+                                        <li class="categories-checkbox form-checkbox">
+                                            <label class="chek_label">
+                                                <input type="checkbox" name="checkbox" hidden>
+                                                <div class="color" style="background-color: #CFBDEF;">Lavender</div>
+                                                <p>Lavender <span class="gray">(13)</span></p>
+                                            </label>
+                                        </li>
+
+                                        <li class="categories-checkbox form-checkbox">
+                                            <label class="chek_label">
+                                                <input type="checkbox" name="checkbox" hidden>
+                                                <div class="color" style="background-color: #F9F0E9;">Natural</div>
+                                                <p>Natural <span class="gray">(13)</span></p>
+                                            </label>
+                                        </li>
+
+                                    </ol>
+                                </li>
+                                <li> <a class="link-category">
+                                        <p>Size</p>
+                                        <span class="icon-[custom--chevron]"></span>
+                                    </a>
+                                    <ol data-category="Size">
+                                        <li class="categories-checkbox form-checkbox">
+                                            <label class="chek_label">
+                                                <input type="checkbox" name="checkbox">
+                                                <p>XS</p>
+                                            </label>
+                                        </li>
+                                        <li class="categories-checkbox form-checkbox">
+                                            <label class="chek_label">
+                                                <input type="checkbox" name="checkbox">
+                                                <p>Small</p>
+                                            </label>
+                                        </li>
+                                        <li class="categories-checkbox form-checkbox">
+                                            <label class="chek_label">
+                                                <input type="checkbox" name="checkbox">
+                                                <p>Medium</p>
+                                            </label>
+                                        </li>
+                                        <li class="categories-checkbox form-checkbox">
+                                            <label class="chek_label">
+                                                <input type="checkbox" name="checkbox">
+                                                <p>Large</p>
+                                            </label>
+                                        </li>
+                                        <li class="categories-checkbox form-checkbox">
+                                            <label class="chek_label">
+                                                <input type="checkbox" name="checkbox">
+                                                <p>XL</p>
+                                            </label>
+                                        </li>
+                                        <li class="categories-checkbox form-checkbox">
+                                            <label class="chek_label">
+                                                <input type="checkbox" name="checkbox">
+                                                <p>XXL</p>
+                                            </label>
+                                        </li>
+
+
+
+                                    </ol>
+                                </li>
+                                <li> <a class="link-category">
+                                        <p>Product subtitle</p>
+                                        <span class="icon-[custom--chevron]"></span>
+                                    </a>
+                                    <ol data-category="Product subtitle">
+                                        <li class="categories-checkbox form-checkbox">
+                                            <label class="chek_label">
+                                                <input type="checkbox" name="checkbox">
+                                                <p>Aries zodiac sign crop top <span class="gray">(1)</span></p>
+                                            </label>
+                                        </li>
+                                        <li class="categories-checkbox form-checkbox">
+                                            <label class="chek_label">
+                                                <input type="checkbox" name="checkbox">
+                                                <p>Aries zodiac sign oversized T-Shirt <span class="gray">(1)</span></p>
+                                            </label>
+                                        </li>
+                                        <li class="categories-checkbox form-checkbox">
+                                            <label class="chek_label">
+                                                <input type="checkbox" name="checkbox">
+                                                <p>Aries zodiac sign ribbed baby tee <span class="gray">(1)</span></p>
+                                            </label>
+                                        </li>
+                                        <li class="categories-checkbox form-checkbox">
+                                            <label class="chek_label">
+                                                <input type="checkbox" name="checkbox">
+                                                <p>Capricorn zodiac sign crop top <span class="gray">(1)</span></p>
+                                            </label>
+                                        </li>
+                                        <li class="categories-checkbox form-checkbox">
+                                            <label class="chek_label">
+                                                <input type="checkbox" name="checkbox">
+                                                <p>Gemini zodiac sign T-Shirt <span class="gray">(1)</span></p>
+                                            </label>
+                                        </li>
+                                        <li class="categories-checkbox form-checkbox">
+                                            <label class="chek_label">
+                                                <input type="checkbox" name="checkbox">
+                                                <p>Unisex scorpio zodiac sign T-Shirt <span class="gray">(1)</span></p>
+                                            </label>
+                                        </li>
+
+
+
+                                    </ol>
+                                </li>
                             </ul>
-                            <button class="story__a" style="margin: 30px auto 0;">Apply
-                                filters</button>
                         </div>
                     </aside>
                     <div class="products">
@@ -423,39 +582,60 @@
                             </button>
                             <div id="blog-dropdown-content" class="blog-dropdown-content">
                                 <label class="blog-custom-option">
-                                    <input type="radio" name="category" />
+                                    <input type="radio" name="Featured" />
                                     <span class="blog-custom-circle">
                                         <span class="blog-inner-circle"></span>
                                     </span>
-                                    <p>Category Category 1</p>
+                                    <p>Featured</p>
                                 </label>
                                 <label class="blog-custom-option">
-                                    <input type="radio" name="category" />
+                                    <input type="radio" name="Best selling" />
                                     <span class="blog-custom-circle">
                                         <span class="blog-inner-circle"></span>
                                     </span>
-                                    <p>Category 2</p>
+                                    <p>Best selling</p>
                                 </label>
                                 <label class="blog-custom-option">
-                                    <input type="radio" name="category" />
+                                    <input type="radio" name="Alphabetically, A-Z" />
                                     <span class="blog-custom-circle">
                                         <span class="blog-inner-circle"></span>
                                     </span>
-                                    <p>Category 3</p>
+                                    <p>Alphabetically, A-Z</p>
                                 </label>
                                 <label class="blog-custom-option">
-                                    <input type="radio" name="category" />
+                                    <input type="radio" name="Alphabetically, Z-A" />
                                     <span class="blog-custom-circle">
                                         <span class="blog-inner-circle"></span>
                                     </span>
-                                    <p>Category 4</p>
+                                    <p>Alphabetically, Z-A</p>
+                                </label>
+                                <label class="blog-custom-option ">
+                                    <input type="radio" name="Price, low to high" />
+                                    <span class="blog-custom-circle">
+                                        <span class="blog-inner-circle"></span>
+                                    </span>
+                                    <p>Price, low to high</p>
+                                </label>
+                                <label class="blog-custom-option ">
+                                    <input type="radio" name="Price, high to low" />
+                                    <span class="blog-custom-circle">
+                                        <span class="blog-inner-circle"></span>
+                                    </span>
+                                    <p>Price, high to low</p>
+                                </label>
+                                <label class="blog-custom-option ">
+                                    <input type="radio" name="Date, old to new" />
+                                    <span class="blog-custom-circle">
+                                        <span class="blog-inner-circle"></span>
+                                    </span>
+                                    <p>Date, old to new</p>
                                 </label>
                                 <label class="blog-custom-option last1">
-                                    <input type="radio" name="category" />
+                                    <input type="radio" name="Date, new to old" />
                                     <span class="blog-custom-circle">
                                         <span class="blog-inner-circle"></span>
                                     </span>
-                                    <p>Category 5</p>
+                                    <p>Date, new to old</p>
                                 </label>
                             </div>
                         </div>
@@ -536,12 +716,89 @@
 
                         </section>
                         <div class="controls"> <a class="button" href>Show More</a>
-                            <div class="arrows"> <a class="icon-[custom--arrow-small]" href></a><a
-                                    class="icon-[custom--arrow-small]" href></a> </div>
-                            <div class="page-numbers"> <span>1</span> <a href="#">2</a> <a href="#">3</a> <a
-                                    href="#">4</a> <span>...</span> <a href="#">17</a> <a href="#">18</a> <a
-                                    href="#">19</a> </div>
-                            <p class="max-w-[12.125rem]"> Now there are 12 products out of 100 on the page </p>
+                            <div class="arrows">
+                                <a class="prev_arrow arrs" href>
+                                    < Previous</a>
+                                        <div class="page-numbers"> <span>1</span> <a href="#">2</a> <span>...</span> <a
+                                                href="#">14</a>
+
+                                        </div>
+                                        <a class="next_arow arrs" href>Next ></a>
+                            </div>
+                            <p class="max-w-[12.125rem]"> You’re viewing 10-20 of 38 products </p>
+                        </div>
+                        <div class="text_catalog">
+                            <h3>Name of section</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at dolor sit amet quam
+                                faucibus ultrices. Lorem ipsum
+                                dolor sit amet, consectetur adipiscing elit. Quisque at dolor sit amet quam faucibus
+                                ultrices.Lorem ipsum dolor sit
+                                amet, consectetur adipiscing elit. Quisque at dolor sit amet quam faucibus
+                                ultrices.Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit.</p>
+                            <h3>Name of section</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at dolor sit amet quam
+                                faucibus ultrices. Lorem ipsum
+                                dolor sit amet, consectetur adipiscing elit. Quisque at dolor sit amet quam faucibus
+                                ultrices.Lorem ipsum dolor sit
+                                amet, consectetur adipiscing elit. Quisque at dolor sit amet quam faucibus
+                                ultrices.Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit.</p>
+                            <h4>Description:</h4>
+                            <ul>
+                                <li>Point 1</li>
+                                <li>Point 2</li>
+                                <li>Point 3_Quisque at dolor sit amet quam faucibus ultrices.</li>
+                                <li>Point 4_Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </li>
+                                <li>Point 5</li>
+                            </ul>
+                            <h3>Name of section</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at dolor sit amet quam
+                                faucibus ultrices. Lorem ipsum
+                                dolor sit amet, consectetur adipiscing elit. Quisque at dolor sit amet quam faucibus
+                                ultrices.Lorem ipsum dolor sit
+                                amet, consectetur adipiscing elit. Quisque at dolor sit amet quam faucibus
+                                ultrices.Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit.
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at dolor sit amet quam
+                                faucibus ultrices. Lorem ipsum
+                                dolor sit amet, consectetur adipiscing elit. Quisque at dolor sit amet quam faucibus
+                                ultrices.Lorem ipsum dolor sit
+                                amet, consectetur adipiscing elit. Quisque at dolor sit amet quam faucibus
+                                ultrices.Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit.
+                            </p>
+                            <h3>Name of section</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at dolor sit amet quam
+                                faucibus ultrices. Lorem
+                                ipsum
+                                dolor sit amet, consectetur adipiscing elit. Quisque at dolor sit amet quam faucibus
+                                ultrices.Lorem ipsum dolor sit
+                                amet, consectetur adipiscing elit. Quisque at dolor sit amet quam faucibus
+                                ultrices.Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit.</p>
+                            <h4>Description:</h4>
+                            <ul>
+                                <li>Point 1</li>
+                                <li>Point 2</li>
+                                <li>Point 3_Quisque at dolor sit amet quam faucibus ultrices.</li>
+                                <li>Point 4_Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </li>
+                                <li>Point 5</li>
+                            </ul>
+                            <h3>Name of section</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at dolor sit amet quam
+                                faucibus ultrices. Lorem
+                                ipsum
+                                dolor sit amet, consectetur adipiscing elit. Quisque at dolor sit amet quam faucibus
+                                ultrices.Lorem ipsum dolor sit
+                                amet, consectetur adipiscing elit. Quisque at dolor sit amet quam faucibus
+                                ultrices.Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit.</p>
                         </div>
                     </div>
                 </div>
@@ -680,6 +937,20 @@
             <h4>Copyright © 2024, Back Bone Promise. All rights reserved. See our terms of use and privacy notice.</h4>
         </div>
     </footer>
+    <script>
+        function toggleDropdown1(header) {
+            const dropdown = header.parentElement;
+            const content = dropdown.querySelector('.choice-content');
+
+            dropdown.classList.toggle('open');
+
+            if (dropdown.classList.contains('open')) {
+                content.style.maxHeight = content.scrollHeight + 'px';
+            } else {
+                content.style.maxHeight = '0';
+            }
+        }
+    </script>
     <script>
         function toggleDropdown() {
             const dropdown = document.getElementById("blog-dropdown-content");
