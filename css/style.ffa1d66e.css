@@ -3174,17 +3174,21 @@ footer {
     position: relative
 }
 
-
-
-@media (min-width:768px) {
-    .description-info__info h4 {
-        display: none
-    }
+.description-info__info h4 {
+    display: none
 }
 
 .description-info__tabs {
     gap: 40px;
-    display: none
+    justify-content: space-between !important;
+    display: flex !important;
+}
+
+@media (min-width:768px) {}
+
+.description-info__tabs {
+    gap: 40px;
+
 }
 
 @media (min-width:768px) {
@@ -3240,13 +3244,11 @@ footer {
     border-bottom: 2px solid #ED805B
 }
 
-
-
-@media (min-width:768px) {
-    .description-info__block:not(.active) {
-        display: none
-    }
+.description-info__block:not(.active) {
+    display: none
 }
+
+@media (min-width:768px) {}
 
 .description-info__block ul {
     --tw-text-opacity: 1;

@@ -251,9 +251,20 @@
                 </div>
                 <div class="top__main">
                     <h2>T-Shirts</h2>
+                    <button class="btn_filter">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44" fill="none">
+                            <path d="M7.33368 12.834H36.667M12.8336 22.0007H31.1669M20.1669 31.1673H23.8336"
+                                stroke="#1D1D1F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
                 </div>
                 <div class="catalog">
-                    <aside class="filters">
+                    <aside id="filters_main" class="filters">
+                        <button id="filters_close" class="filters_close"><svg xmlns="http://www.w3.org/2000/svg"
+                                width="44" height="44" viewBox="0 0 44 44" fill="none">
+                                <path d="M27.5 37.6673L12.8333 23.0007L27.5 8.33398" stroke="#1D1D1F"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg></button>
                         <h1 class="choits_title">Filters</h1>
                         <div class="choices-container">
 
@@ -716,7 +727,7 @@
                             </div>
 
                         </section>
-                        <div class="controls"> <a class="button" href>Show More</a>
+                        <div class="controls">
                             <div class="arrows">
                                 <a class="prev_arrow arrs" href>
                                     < Previous</a>
@@ -938,6 +949,30 @@
             <h4>Copyright © 2024, Back Bone Promise. All rights reserved. See our terms of use and privacy notice.</h4>
         </div>
     </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const btnFilter = document.querySelector(".btn_filter");
+            const filtersMain = document.getElementById("filters_main");
+            const filtersClose = document.getElementById("filters_close");
+
+            let scrollY = 0;
+
+
+            btnFilter.addEventListener("click", () => {
+                scrollY = window.scrollY;
+                document.body.style.position = "fixed";
+                document.body.style.top = `-${scrollY}px`;
+                filtersMain.style.left = "0px";
+            });
+
+            filtersClose.addEventListener("click", () => {
+                document.body.style.position = "";
+                document.body.style.top = "";
+                window.scrollTo(0, scrollY);
+                filtersMain.style.left = "-100%";
+            });
+        });
+    </script>
     <script>
         function toggleDropdown1(header) {
             const dropdown = header.parentElement;
