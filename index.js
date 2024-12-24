@@ -208,3 +208,47 @@ const swiper6 = new Swiper('.blog_slider', {
         }
     }
 });
+const swiper7 = new Swiper('.blog_slider1', {
+    navigation: {
+        nextEl: ".blog_next",
+        prevEl: ".blog_prev",
+    },
+    slidesPerView: 4,
+    spaceBetween: 20,
+    speed: 800,
+    breakpoints: {
+
+        320: {
+            slidesPerView: 2,
+            spaceBetween: 15
+        },
+
+        950: {
+            slidesPerView: 3,
+            spaceBetween: 20
+        },
+        1150: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+        }
+    }
+});
+const swiper8 = new Swiper('.swiper_rrev', {
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+
+    slidesPerView: 1,
+    spaceBetween: 20,
+    speed: 800,
+    breakpoints: {
+
+
+    }
+});

@@ -1694,8 +1694,9 @@
 }
 
 .options--horizontal .active {
-  background: #FFD493 !important;
-  border: transparent !important;
+  border-radius: 8px;
+  border: 1px solid var(--Orange, #ED805B) !important;
+  background: rgba(237, 128, 91, 0.30);
   transition: var(--trans);
 }
 
