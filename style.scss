@@ -143,8 +143,8 @@ header {
   font-family: "Open Sans";
   font-size: 20px;
   font-style: normal;
-  font-weight: 300;
-  line-height: normal;
+  font-weight: 400;
+  line-height: 150%;
   transition: var(--trans);
   position: relative;
   &:hover {
@@ -626,16 +626,14 @@ header {
   }
   p {
     color: var(--Black, #1d1d1f);
-    text-align: justify;
-
-    /* Text Tablet/Body */
+    text-align: left;
     font-family: "Open Sans";
     font-size: 18px;
     font-style: normal;
-    font-weight: 300;
-    line-height: normal;
+    font-weight: 400;
+    line-height: 150%;
     span {
-      font-weight: 400;
+      font-weight: 700;
     }
   }
 }
@@ -787,8 +785,8 @@ header {
     font-family: "Open Sans";
     font-size: 18px;
     font-style: normal;
-    font-weight: 300;
-    line-height: normal;
+    font-weight: 400;
+    line-height: 150%;
     margin-bottom: 18px;
   }
   h5 {
@@ -873,8 +871,8 @@ header {
     font-family: "Open Sans";
     font-size: 18px;
     font-style: normal;
-    font-weight: 300;
-    line-height: normal;
+    font-weight: 400;
+    line-height: 150%;
     margin-top: 50px;
     margin-bottom: 50px;
   }
@@ -915,8 +913,8 @@ header {
       font-family: "Open Sans";
       font-size: 18px;
       font-style: normal;
-      font-weight: 300;
-      line-height: normal;
+      font-weight: 400;
+      line-height: 150%;
       margin-top: 20px;
     }
   }
@@ -1031,15 +1029,15 @@ header {
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
-    line-height: normal;
+    line-height: 150%;
   }
   p {
     color: var(--Black, #1d1d1f);
     font-family: "Open Sans";
     font-size: 18px;
     font-style: normal;
-    font-weight: 300;
-    line-height: normal;
+    font-weight: 400;
+    line-height: 150%;
   }
 }
 .box__star {
@@ -1060,8 +1058,8 @@ header {
     font-family: "Open Sans";
     font-size: 18px;
     font-style: normal;
-    font-weight: 300;
-    line-height: normal;
+    font-weight: 400;
+    line-height: 150%;
   }
 }
 .swiper__r {
@@ -1195,10 +1193,10 @@ form {
     font-family: "Open Sans";
     font-size: 18px;
     font-style: normal;
-    font-weight: 300;
-    line-height: normal;
+    font-weight: 400;
+    line-height: 150%;
     span {
-      font-weight: 400;
+      font-weight: 700;
     }
   }
 }
@@ -1213,8 +1211,8 @@ footer {
     font-family: "Open Sans";
     font-size: 18px;
     font-style: normal;
-    font-weight: 300;
-    line-height: normal;
+    font-weight: 400;
+    line-height: 150%;
   }
 }
 .footer__container {
@@ -1254,8 +1252,8 @@ footer {
       font-family: "Open Sans";
       font-size: 18px;
       font-style: normal;
-      font-weight: 300;
-      line-height: normal;
+      font-weight: 400;
+      line-height: 150%;
     }
   }
 }
@@ -1299,7 +1297,7 @@ footer {
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
+  line-height: 150%;
 }
 .footer__btn {
   display: flex;
@@ -1314,10 +1312,10 @@ footer {
     font-family: "Open Sans";
     font-size: 18px;
     font-style: normal;
-    font-weight: 300;
-    line-height: normal;
+    font-weight: 400;
+    line-height: 150%;
     span {
-      font-weight: 400;
+      font-weight: 700;
     }
   }
 }
@@ -1455,12 +1453,12 @@ footer {
     font-family: "Open Sans";
     font-size: 18px;
     font-style: normal;
-    font-weight: 300;
-    line-height: normal;
+    font-weight: 400;
+    line-height: 150%;
     padding: 60px 55px;
     text-align: justify;
     span {
-      font-weight: 400;
+      font-weight: 700;
     }
     position: relative;
     .text1 {
@@ -1575,7 +1573,7 @@ footer {
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
-    line-height: normal;
+    line-height: 150%;
     margin-bottom: 4px;
   }
   p {
@@ -1583,8 +1581,8 @@ footer {
     font-family: "Open Sans";
     font-size: 18px;
     font-style: normal;
-    font-weight: 300;
-    line-height: normal;
+    font-weight: 400;
+    line-height: 150%;
   }
 }
 // last ---------------------------------------------------------
@@ -1627,8 +1625,8 @@ footer {
     font-family: "Open Sans";
     font-size: 24px;
     font-style: normal;
-    font-weight: 300;
-    line-height: normal;
+    font-weight: 400;
+    line-height: 150%;
     margin-bottom: 20px;
     transition: var(--trans);
   }
@@ -1638,7 +1636,7 @@ footer {
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
-    line-height: normal;
+    line-height: 150%;
     padding-bottom: 1spx;
     border-bottom: 1px solid #1d1d1f;
     transition: var(--trans);
@@ -1653,8 +1651,8 @@ footer {
     font-family: "Open Sans";
     font-size: 18px;
     font-style: normal;
-    font-weight: 300;
-    line-height: normal;
+    font-weight: 400;
+    line-height: 150%;
   }
 }
 .last__box {
@@ -1684,8 +1682,8 @@ footer {
     font-family: "Open Sans";
     font-size: 18px;
     font-style: normal;
-    font-weight: 300;
-    line-height: normal;
+    font-weight: 400;
+    line-height: 150%;
   }
 }
 // member -------------------------------------------------------------------------
@@ -1716,7 +1714,7 @@ footer {
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
-    line-height: normal;
+    line-height: 150%;
     margin-bottom: 30px;
   }
   p {
@@ -1724,8 +1722,8 @@ footer {
     font-family: "Open Sans";
     font-size: 18px;
     font-style: normal;
-    font-weight: 300;
-    line-height: normal;
+    font-weight: 400;
+    line-height: 150%;
     margin-bottom: 100px;
     span {
       font-weight: 400;
@@ -1805,7 +1803,7 @@ footer {
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
-    line-height: normal;
+    line-height: 150%;
     margin-bottom: 14px;
   }
   p {
@@ -1813,8 +1811,8 @@ footer {
     font-family: "Open Sans";
     font-size: 18px;
     font-style: normal;
-    font-weight: 300;
-    line-height: normal;
+    font-weight: 400;
+    line-height: 150%;
   }
 }
 .wgive__info {
@@ -1927,7 +1925,7 @@ footer {
       font-size: 24px;
       font-style: normal;
       font-weight: 400;
-      line-height: normal;
+      line-height: 150%;
       text-transform: lowercase;
     }
   }
@@ -1937,7 +1935,7 @@ footer {
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
-    line-height: normal;
+    line-height: 150%;
     margin-bottom: 15px;
     text-align: center;
   }
@@ -1946,8 +1944,8 @@ footer {
     font-family: "Open Sans";
     font-size: 18px;
     font-style: normal;
-    font-weight: 300;
-    line-height: normal;
+    font-weight: 400;
+    line-height: 150%;
     text-align: justify;
     margin-bottom: 15px;
   }
@@ -2162,8 +2160,8 @@ footer {
     font-family: "Open Sans";
     font-size: 18px;
     font-style: normal;
-    font-weight: 300;
-    line-height: normal;
+    font-weight: 400;
+    line-height: 150%;
     transition: var(--trans);
     &:hover {
       color: #dd643b;
@@ -2179,8 +2177,8 @@ footer {
     font-family: "Open Sans";
     font-size: 18px;
     font-style: normal;
-    font-weight: 300;
-    line-height: normal;
+    font-weight: 400;
+    line-height: 150%;
   }
 }
 .next__case,
@@ -2226,8 +2224,8 @@ footer {
     font-family: "Open Sans";
     font-size: 18px;
     font-style: normal;
-    font-weight: 300;
-    line-height: normal;
+    font-weight: 400;
+    line-height: 150%;
   }
 }
 .case_r {
@@ -2878,8 +2876,8 @@ footer {
     font-family: "Open Sans";
     font-size: 18px;
     font-style: normal;
-    font-weight: 300;
-    line-height: normal;
+    font-weight: 400;
+    line-height: 150%;
   }
 }
 .info__blog {
@@ -3031,8 +3029,8 @@ footer {
     font-family: "Open Sans";
     font-size: 18px;
     font-style: normal;
-    font-weight: 300;
-    line-height: normal;
+    font-weight: 400;
+    line-height: 150%;
   }
   a {
     border-radius: 8px;
@@ -3129,8 +3127,8 @@ footer {
       font-family: "Open Sans";
       font-size: 18px;
       font-style: normal;
-      font-weight: 300;
-      line-height: normal;
+      font-weight: 400;
+      line-height: 150%;
     }
     input {
       border-radius: 8px;
@@ -3141,7 +3139,7 @@ footer {
       font-size: 18px;
       font-style: normal;
       font-weight: 400;
-      line-height: normal;
+      line-height: 150%;
       transition: var(--trans);
       &:focus {
         border-color: #dd643b;
@@ -3156,7 +3154,7 @@ footer {
       font-size: 18px;
       font-style: normal;
       font-weight: 400;
-      line-height: normal;
+      line-height: 150%;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -3176,8 +3174,8 @@ footer {
     font-family: "Open Sans";
     font-size: 18px;
     font-style: normal;
-    font-weight: 300;
-    line-height: normal;
+    font-weight: 400;
+    line-height: 150%;
   }
 }
 .line {
@@ -3459,8 +3457,8 @@ footer {
     font-family: "Open Sans";
     font-size: 18px;
     font-style: normal;
-    font-weight: 300;
-    line-height: normal;
+    font-weight: 400;
+    line-height: 150%;
   }
   .video_play {
     height: 550px;
@@ -3707,8 +3705,8 @@ footer {
     font-size: 112px;
     font-style: normal;
     font-family: "PT Serif";
-    font-weight: 300;
-    line-height: 100%; /* 112px */
+    font-weight: 400;
+    line-height: 150%; /* 112px */
     margin-top: 0px;
     margin-bottom: 75px;
   }
