@@ -32,19 +32,55 @@
                     <nav class="h__center">
                         <ul class="header__list">
                             <li class="header__item">
-                                <a href="./about-us.html" class="header__link">Home</a>
+                                <a href="./about-us.html" class="header__link ">Home</a>
                             </li>
                             <li class="header__item">
-                                <a href="./about-us.html" class="header__link">About Us</a>
+                                <a href="./about-us.html" class="header__link ">About Us</a>
                             </li>
                             <li class="header__item">
-                                <a href="./service.html" class="header__link">Services</a>
+                                <a href="./service.html" class="header__link ">Services</a>
                             </li>
                             <li class="header__item">
-                                <a href="./cases.html" class="header__link">Cases</a>
+                                <a href="./cases.html" class="header__link ">Cases</a>
                             </li>
-                            <li class="header__item">
-                                <a href="./catalog.html" class="header__link">Catalog</a>
+                            <li class="header__item dropdown">
+                                <a href="./catalog.html" class="header__link active">Catalog</a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="#">Shop all</a>
+                                        <a href="#">Best sellers</a>
+                                        <a href="#">Men`s</a>
+                                        <a href="#">Women`s</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Tops</a>
+                                        <a class="disable" href="#">T-Shirts</a>
+                                        <a class="disable" href="#">Baby tee</a>
+                                        <a class="disable" href="#">Tank top</a>
+                                        <a class="disable" href="#">Zodiac sign tees</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Sweatshirts</a>
+                                        <a class="disable" href="#">Crewneck</a>
+                                        <a class="disable" href="#">Hoodies</a>
+                                        <a class="disable" href="#">Crewneck pullover</a>
+                                        <a class="disable" href="#">Cropped pullover</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Bottoms</a>
+                                        <a class="disable" href="#">Sweatpants</a>
+                                        <a class="disable" href="#">Cargo sweatpants</a>
+                                        <a class="disable" href="#">Flared sweatpants</a>
+                                        <a class="disable" href="#">Shorts</a>
+                                        <a class="disable" href="#">Short shorts</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Astrology signs</a>
+                                        <a href="#">Streetwear</a>
+                                        <a href="#">Loungewear</a>
+                                        <a href="#">Swimwear</a>
+                                    </li>
+                                </ul>
                             </li>
                             <li class="header__item">
                                 <a href="./book.html" class="header__link">Look Book</a>
@@ -52,7 +88,9 @@
                             <li class="header__item">
                                 <a href="./blog.html" class="header__link">Blog</a>
                             </li>
-
+                            <li class="header__item">
+                                <a href="#form" class="header__link">Contacts</a>
+                            </li>
                         </ul>
                     </nav>
                 </div>
@@ -119,6 +157,50 @@
                                 </li>
                                 <li class="header__item">
                                     <a href="./cases.html" class="header__link">Cases</a>
+                                </li>
+                                <li class="header__item dropdown_mob">
+                                   <div class="box1">
+                                    <a href="./catalog.html" class="header__link">Catalog</a>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="11" height="7" viewBox="0 0 11 7" fill="none">
+                                        <path d="M0.5 1L5.5 6L10.5 1" stroke="#1D1D1F"/>
+                                      </svg>
+                                   </div>
+                                    <ul class="dropdown-menu_mob">
+                                        <li>
+                                            <a href="#">Shop all</a>
+                                            <a href="#">Best sellers</a>
+                                            <a href="#">Men`s</a>
+                                            <a href="#">Women`s</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Tops</a>
+                                            <a class="disable" href="#">T-Shirts</a>
+                                            <a class="disable" href="#">Baby tee</a>
+                                            <a class="disable" href="#">Tank top</a>
+                                            <a class="disable" href="#">Zodiac sign tees</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Sweatshirts</a>
+                                            <a class="disable" href="#">Crewneck</a>
+                                            <a class="disable" href="#">Hoodies</a>
+                                            <a class="disable" href="#">Crewneck pullover</a>
+                                            <a class="disable" href="#">Cropped pullover</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Bottoms</a>
+                                            <a class="disable" href="#">Sweatpants</a>
+                                            <a class="disable" href="#">Cargo sweatpants</a>
+                                            <a class="disable" href="#">Flared sweatpants</a>
+                                            <a class="disable" href="#">Shorts</a>
+                                            <a class="disable" href="#">Short shorts</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Astrology signs</a>
+                                            <a href="#">Streetwear</a>
+                                            <a href="#">Loungewear</a>
+                                            <a href="#">Swimwear</a>
+                                        </li>
+                                    </ul>
                                 </li>
                                 <li class="header__item">
                                     <a href="./book.html" class="header__link">Look Book</a>
@@ -442,38 +524,49 @@
                                     </a>
                                     <ol data-category="Color">
                                         <li class="categories-checkbox form-checkbox">
-                                            <label class="chek_label">
+                                            <label class="chek_label colors_l">
                                                 <input type="checkbox" name="checkbox" hidden>
+                                               <div class="boxs">
                                                 <div class="color " style="background-color: black;">Black</div>
+                                               </div>
                                                 <p>Black <span class="gray">(13)</span></p>
                                             </label>
                                         </li>
                                         <li class="categories-checkbox form-checkbox">
-                                            <label class="chek_label">
+                                            <label class="chek_label colors_l">
                                                 <input type="checkbox" name="checkbox" hidden>
+                                               <div class="boxs">
                                                 <div class="color" style="background-color: #CFBDEF;">Lavender</div>
+                                               </div>
                                                 <p>Lavender <span class="gray">(13)</span></p>
                                             </label>
                                         </li>
 
                                         <li class="categories-checkbox form-checkbox">
-                                            <label class="chek_label">
+                                            <label class="chek_label colors_l">
                                                 <input type="checkbox" name="checkbox" hidden>
-                                                <div class="color" style="background-color: #F9F0E9;">Natural</div>
+<div class="boxs">                                                <div class="color" style="background-color: #F9F0E9;">Natural</div>
+</div>
                                                 <p>Natural <span class="gray">(13)</span></p>
                                             </label>
                                         </li>
                                         <li class="categories-checkbox form-checkbox">
-                                            <label class="chek_label">
+                                            <label class="chek_label colors_l">
                                                 <input type="checkbox" name="checkbox" hidden>
-                                                <div class="color " style="background-color: black;">Black</div>
+<div class="boxs">
+    <div class="color " style="background-color: black;">Black</div>
+
+</div>
                                                 <p>Black <span class="gray">(13)</span></p>
                                             </label>
                                         </li>
                                         <li class="categories-checkbox form-checkbox">
-                                            <label class="chek_label">
+                                            <label class="chek_label colors_l">
                                                 <input type="checkbox" name="checkbox" hidden>
-                                                <div class="color" style="background-color: #CFBDEF;">Lavender</div>
+<div class="boxs">
+    <div class="color" style="background-color: #CFBDEF;">Lavender</div>
+
+</div>
                                                 <p>Lavender <span class="gray">(13)</span></p>
                                             </label>
                                         </li>
@@ -481,7 +574,10 @@
                                         <li class="categories-checkbox form-checkbox">
                                             <label class="chek_label">
                                                 <input type="checkbox" name="checkbox" hidden>
-                                                <div class="color" style="background-color: #F9F0E9;">Natural</div>
+<div class="boxs">
+    <div class="color" style="background-color: #F9F0E9;">Natural</div>
+
+</div>
                                                 <p>Natural <span class="gray">(13)</span></p>
                                             </label>
                                         </li>

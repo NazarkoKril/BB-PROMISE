@@ -166,3 +166,19 @@ $(document).ready(function () {
 		);
 });
 //# sourceMappingURL=script-shop-page.0da700e4.js.map
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const checkboxes = document.querySelectorAll(".categories-checkbox input");
+
+    checkboxes.forEach((checkbox) => {
+        checkbox.addEventListener("change", function () {
+            let label = this.closest(".colors_l"); 
+            if (this.checked) {
+                label.classList.add("selected"); 
+            } else {
+                label.classList.remove("selected"); 
+            }
+        });
+    });
+});

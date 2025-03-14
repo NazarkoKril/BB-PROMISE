@@ -252,3 +252,20 @@ const swiper8 = new Swiper('.swiper_rrev', {
 
     }
 });
+document.addEventListener("DOMContentLoaded", function () {
+    const dropdown = document.querySelector(".header__item.dropdown_mob");
+    const menu = document.querySelector(".dropdown-menu_mob");
+    const toggleButton = document.querySelector(".box"); 
+  
+    toggleButton.addEventListener("click", function (event) {
+      event.stopPropagation(); 
+      menu.classList.toggle("active");
+    });
+  
+    document.addEventListener("click", function (event) {
+      if (!dropdown.contains(event.target)) {
+        menu.classList.remove("active");
+      }
+    });
+  });
+  
