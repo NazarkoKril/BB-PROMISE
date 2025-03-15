@@ -255,7 +255,7 @@ const swiper8 = new Swiper('.swiper_rrev', {
 document.addEventListener("DOMContentLoaded", function () {
     const dropdown = document.querySelector(".header__item.dropdown_mob");
     const menu = document.querySelector(".dropdown-menu_mob");
-    const toggleButton = document.querySelector(".box"); 
+    const toggleButton = document.querySelector(".box1"); 
   
     toggleButton.addEventListener("click", function (event) {
       event.stopPropagation(); 
