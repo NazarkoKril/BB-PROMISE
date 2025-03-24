@@ -2374,6 +2374,8 @@ footer h4 {
   -webkit-transition: var(--trans);
   transition: var(--trans);
   border: 1px solid transparent;
+  position: relative;
+  overflow: hidden;
 }
 .price__card:hover {
   border: 1px solid var(--Orange, #ed805b);
@@ -2430,6 +2432,38 @@ footer h4 {
   line-height: 150%;
   text-align: left;
   margin-bottom: 15px;
+}
+
+.discount-badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #ed805b;
+  text-align: center;
+  width: 300px;
+  -webkit-transform: translate(25%, 25%) rotate(45deg);
+          transform: translate(25%, 25%) rotate(45deg);
+  z-index: 2;
+  color: var(--Clear-White, #FFF);
+  leading-trim: both;
+  text-edge: cap;
+  font-family: "PT Serif";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 74px; /* 205.556% */
+  text-transform: uppercase;
+}
+.discount-badge span {
+  color: var(--Clear-White, #FFF);
+  leading-trim: both;
+  text-edge: cap;
+  font-family: "PT Serif";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 74px;
+  text-transform: uppercase;
 }
 
 .faq {
@@ -5614,6 +5648,43 @@ footer h4 {
   margin-left: auto;
 }
 
+.price__card .old_price {
+  color: #D2A58D;
+  font-family: "PT Serif";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 74px; /* 154.167% */
+  text-transform: uppercase;
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 0px;
+  margin-top: -40px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.price__card .old_price span {
+  color: #D2A58D;
+  /* Tablet/Text/Paragraph */
+  text-transform: lowercase;
+  font-family: "Open Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.price__card .old_price::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  left: 0;
+  bottom: 28px;
+  height: 2px;
+  background-color: #D2A58D;
+}
+
 @media (max-width: 1300px) {
   .header__list {
     gap: 30px;
@@ -7203,5 +7274,24 @@ footer h4 {
   }
   .advantage-hover-text {
     font-weight: 500;
+  }
+  .price__card .old_price {
+    margin-left: 0px;
+  }
+  .price__card h4 {
+    text-align: left;
+  }
+  .discount-badge {
+    color: var(--Clear-White, #FFF);
+    leading-trim: both;
+    text-edge: cap;
+    font-family: "PT Serif";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 60.553px; /* 201.844% */
+    text-transform: uppercase;
+    -webkit-transform: translate(30%, 20%) rotate(45deg);
+            transform: translate(30%, 20%) rotate(45deg);
   }
 }
