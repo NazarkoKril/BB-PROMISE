@@ -252,6 +252,24 @@ const swiper8 = new Swiper('.swiper_rrev', {
 
     }
 });
+
+
+  const swiper9 = new Swiper('.feedback-swiper', {
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+
+    slidesPerView:  "auto",
+    spaceBetween: 20,
+    loop: true,
+    speed: 800,
+    breakpoints: {
+
+
+    }
+});
+
 document.addEventListener("DOMContentLoaded", function () {
     const dropdown = document.querySelector(".header__item.dropdown_mob");
     const menu = document.querySelector(".dropdown-menu_mob");
@@ -268,4 +286,3 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   });
-  
