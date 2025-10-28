@@ -5311,6 +5311,10 @@ footer {
             .first__btn {
                 background-color: #fff;
                 color: var(--color_purple) !important;
+
+                &:hover {
+                    background-color: #f9e9e0;
+                }
             }
         }
     }
@@ -5358,6 +5362,7 @@ footer {
         box-shadow: 0px 4px 14px 0px #00000014;
         border-radius: 4px;
         padding: 44px 23px 30px 23px;
+        min-height: 622px;
         position: relative;
         transition: var(--trans);
         border: 1px solid transparent;
@@ -5366,6 +5371,11 @@ footer {
 
         &:hover {
             border: 1px solid #ed805b;
+        }
+
+        &-container {
+            position: relative;
+            z-index: 1;
         }
 
         h4 {
@@ -5411,8 +5421,7 @@ footer {
             }
 
             .info-text {
-                max-height: fit-content;
-                min-height: fit-content;
+                min-height: 270px;
                 margin-bottom: 9px;
                 overflow: hidden;
                 transition: var(--trans);
@@ -5469,6 +5478,7 @@ footer {
             width: 34px;
             height: 34px;
             position: relative;
+            cursor: pointer;
 
             svg {
                 transition: var(--trans);
@@ -5581,6 +5591,17 @@ footer {
 @media (max-width: 1300px) {
     .header__list {
         gap: 30px;
+    }
+}
+@media (1750px < width < 1802px), (max-width: 1262px) {
+    .pricing-section {
+        .pricing-block {
+            min-height: 659px;
+
+            &-info .info-text {
+                min-height: 297px;
+            }
+        }
     }
 }
 @media (max-width: 1150px) {
@@ -6179,6 +6200,14 @@ footer {
 
         .first__btn {
             width: fit-content;
+        }
+
+        .pricing-block {
+            min-height: unset;
+
+            &-info .info-text {
+                min-height: unset;
+            }
         }
     }
 

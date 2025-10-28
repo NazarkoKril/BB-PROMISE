@@ -6175,6 +6175,9 @@ footer h4 {
   background-color: #fff;
   color: var(--color_purple) !important;
 }
+.block-section .block.dashboard .first__btn:hover {
+  background-color: #f9e9e0;
+}
 .block-section .block-photo {
   max-height: 360px;
   display: -webkit-box;
@@ -6224,6 +6227,7 @@ footer h4 {
           box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.0784313725);
   border-radius: 4px;
   padding: 44px 23px 30px 23px;
+  min-height: 622px;
   position: relative;
   -webkit-transition: var(--trans);
   transition: var(--trans);
@@ -6233,6 +6237,10 @@ footer h4 {
 }
 .pricing-section .pricing-block:hover {
   border: 1px solid #ed805b;
+}
+.pricing-section .pricing-block-container {
+  position: relative;
+  z-index: 1;
 }
 .pricing-section .pricing-block h4 {
   font-family: "PT Serif";
@@ -6275,12 +6283,7 @@ footer h4 {
           transform: rotate(90deg);
 }
 .pricing-section .pricing-block-info .info-text {
-  max-height: -webkit-fit-content;
-  max-height: -moz-fit-content;
-  max-height: fit-content;
-  min-height: -webkit-fit-content;
-  min-height: -moz-fit-content;
-  min-height: fit-content;
+  min-height: 270px;
   margin-bottom: 9px;
   overflow: hidden;
   -webkit-transition: var(--trans);
@@ -6335,6 +6338,7 @@ footer h4 {
   width: 34px;
   height: 34px;
   position: relative;
+  cursor: pointer;
 }
 .pricing-section .pricing-block .pricing-toggle svg {
   -webkit-transition: var(--trans);
@@ -6429,6 +6433,14 @@ footer h4 {
 @media (max-width: 1300px) {
   .header__list {
     gap: 30px;
+  }
+}
+@media (1750px < width < 1802px), (max-width: 1262px) {
+  .pricing-section .pricing-block {
+    min-height: 659px;
+  }
+  .pricing-section .pricing-block-info .info-text {
+    min-height: 297px;
   }
 }
 @media (max-width: 1150px) {
@@ -7081,6 +7093,12 @@ footer h4 {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
+  }
+  .pricing-section .pricing-block {
+    min-height: unset;
+  }
+  .pricing-section .pricing-block-info .info-text {
+    min-height: unset;
   }
   .contact {
     padding-bottom: 70px;
