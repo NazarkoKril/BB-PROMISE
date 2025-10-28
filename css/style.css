@@ -6122,6 +6122,9 @@ footer h4 {
   height: 24px;
 }
 
+.block-section {
+  padding-block: 10px;
+}
 .block-section .block {
   display: grid;
   grid-template-columns: 510px 1fr;
